@@ -14,14 +14,14 @@
 
   <section id="q01"><div class="etiqueta">QUE01: GOA01</div>
     <h2>Quantas variedades do português brasileiro são descritas, e quantas o dataset distingue?</h2>
-    <p class="explicacao">Aqui eu quis mostrar o tamanho do problema logo de cara. Nessa classificação, o português brasileiro tem 16 dialetos e 44 subdialetos, e o CORAA, que é um dos maiores datasets abertos de fala em português, só cobre 4 subdialetos. Dá pra clicar em cada parte pra abrir os dialetos e ver o que ficou de fora.</p>
+    <p class="explicacao">Aqui eu quis mostrar o tamanho do problema. Nessa classificação, o português brasileiro tem 16 dialetos e 44 subdialetos, e o CORAA, que é um dos maiores datasets abertos de fala em português, só cobre 4 subdialetos. Dá para clicar em cada parte para abrir os dialetos e ver o que ficou de fora.</p>
     <p class="tipo">Gráfico: <strong>Sunburst zoomável</strong><br>Link no D3: <a href="https://observablehq.com/@d3/zoomable-sunburst" target="_blank">Zoomable sunburst</a></p>
     <div class="grafico" id="g01"></div>
   </section>
 
   <section id="q01b"><div class="etiqueta">QUE01: versão estática</div>
     <h2>Quantas variedades do português brasileiro são descritas, e quantas o dataset distingue? (versão estática)</h2>
-    <p class="explicacao">É a mesma informação do gráfico de cima, só que sem precisar clicar, pra caber num slide. Tudo que está em cinza não tem nenhum registro no dataset.</p>
+    <p class="explicacao">É a mesma informação do gráfico de cima, só que sem precisar clicar, para caber em um slide. Tudo que está em cinza não tem nenhum registro no dataset.</p>
     <p class="tipo">Gráfico: <strong>Sunburst</strong><br>Link no D3: <a href="https://observablehq.com/@d3/sunburst/2" target="_blank">Sunburst</a></p>
     <div class="grafico" id="g01b"></div>
   </section>
@@ -35,14 +35,14 @@
 
   <section id="q05"><div class="etiqueta">QUE05: GOA02</div>
     <h2>A qualidade do áudio, segundo os ouvintes que validaram o corpus, é a mesma entre as variedades?</h2>
-    <p class="explicacao">Mesmo pros sotaques que estão no dataset, eu quis ver se o áudio tem a mesma qualidade. As pessoas que validaram o CORAA marcavam problemas como ruído e hesitação, e São Paulo e Minas têm bem mais ruído marcado que Recife. Ou seja, não basta estar no dado: a qualidade do que entra também muda de um lugar pro outro.</p>
+    <p class="explicacao">Mesmo para os sotaques que estão no dataset, eu quis ver se o áudio tem a mesma qualidade. As pessoas que validaram o CORAA marcavam problemas como ruído e hesitação, e São Paulo e Minas têm bem mais ruído marcado que Recife. Ou seja, não basta estar no dado: a qualidade do que entra também muda de um lugar para o outro.</p>
     <p class="tipo">Gráfico: <strong>Barras agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a></p>
     <div class="grafico" id="g05"></div>
   </section>
 
   <section id="q09"><div class="etiqueta">QUE09: GOA04</div>
     <h2>Quantas das línguas indígenas faladas no Brasil têm dados de fala abertos?</h2>
-    <p class="explicacao">Aqui eu queria mostrar que as línguas indígenas nem entram na conversa. O Censo de 2022 contou 295 línguas indígenas faladas no Brasil, uma delas com mais de 50 mil falantes, e nenhuma tem uma hora sequer no Common Voice. Enquanto isso, línguas indígenas de outros países, como o guarani do Paraguai, já estão lá.</p>
+    <p class="explicacao">Aqui eu queria mostrar que as línguas indígenas ficam totalmente de fora. O Censo de 2022 contou 295 línguas indígenas faladas no Brasil, uma delas com mais de 50 mil falantes, e nenhuma tem uma hora sequer no Common Voice. Enquanto isso, línguas indígenas de outros países, como o guarani do Paraguai, já estão lá.</p>
     <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
     <h3>As 12 línguas indígenas mais faladas no Brasil (Censo 2022)</h3>
     <div class="grafico" id="g09a"></div>
@@ -63,7 +63,7 @@
 
   <section id="q08"><div class="etiqueta">QUE08: GOA03</div>
     <h2>Quanto dado aberto de fala atípica existe em cada idioma, e quanto existe em português brasileiro?</h2>
-    <p class="explicacao">Aqui eu juntei os datasets de fala atípica que consegui encontrar (disartria, Parkinson, gagueira, autismo) pra ver quanto existe em cada idioma. Quase tudo é em inglês, e em português brasileiro o único que achei é de pacientes com COVID. Não tem nada de disartria, Parkinson, gagueira ou autismo.</p>
+    <p class="explicacao">Aqui eu juntei os datasets de fala atípica que consegui encontrar (disartria, Parkinson, gagueira, autismo) para ver quanto existe em cada idioma. Quase tudo é em inglês, e em português brasileiro o único que achei é de pacientes com COVID. Não tem nada de disartria, Parkinson, gagueira ou autismo.</p>
     <p class="tipo">Gráfico: <strong>Barras horizontais agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a> + <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a> (adaptado: grupos por idioma, na horizontal)</p>
     <div class="grafico" id="g08"></div>
   </section>
@@ -72,7 +72,7 @@
 
   <section id="q03"><div class="etiqueta">QUE03: GOA02</div>
     <h2>O erro dos modelos de reconhecimento de fala muda quando a variedade entra no treino?</h2>
-    <p class="explicacao">Essa é a primeira prova de impacto. Os autores do CORAA treinaram um modelo com e sem os dados deles e mediram o erro em cada sotaque. Quando o sotaque entra no treino, o erro cai bastante: no interior de SP, caiu 25 pontos. A única exceção é a fala preparada, que já era fácil pro modelo.</p>
+    <p class="explicacao">Essa é a primeira prova de impacto. Os autores do CORAA treinaram um modelo com e sem os dados deles e mediram o erro em cada sotaque. Quando o sotaque entra no treino, o erro cai bastante: no interior de SP, caiu 25 pontos. A única exceção é a fala preparada, que já era fácil para o modelo.</p>
     <p class="tipo">Gráfico: <strong>Gráfico de halteres</strong><br>Link no D3: <a href="https://observablehq.com/@d3/dot-plot/2" target="_blank">Dot plot</a></p>
     <h3>Por sotaque</h3>
     <div class="grafico" id="g03a"></div>
@@ -89,14 +89,14 @@
 
   <section id="q04b"><div class="etiqueta">QUE04: parte 2, experimento próprio</div>
     <h2>Separando sotaque e estilo, o erro do modelo muda com qual dos dois?</h2>
-    <p class="explicacao">Como o artigo não separava sotaque e estilo, eu fiz meu próprio teste pra separar os dois. Rodei o Whisper large-v3 (da OpenAI, lançado em novembro de 2023), sem nenhum ajuste, nos 12.676 trechos do conjunto de teste do CORAA, numa placa de vídeo RTX 5090 de 32 GB. Levou uns 25 minutos. Depois comparei o que ele escreveu com a transcrição feita por pessoas e calculei o erro de cada grupo. Com o mesmo estilo, o sotaque ainda muda o erro (Minas 21,7%, interior de SP 34,2%), e com o mesmo sotaque, o estilo também muda (Recife: 12,6% na fala preparada, 33,0% na espontânea). Os dois pesam.</p>
+    <p class="explicacao">Como o artigo não separava sotaque e estilo, eu fiz meu próprio teste para separar os dois. Rodei o Whisper large-v3 (da OpenAI, lançado em novembro de 2023), sem nenhum ajuste, nos 12.676 trechos do conjunto de teste do CORAA, em uma placa de vídeo RTX 5090 de 32 GB. Levou cerca de 25 minutos. Depois comparei o que ele escreveu com a transcrição feita por pessoas e calculei o erro de cada grupo. Com o mesmo estilo, o sotaque ainda muda o erro (Minas 21,7%, interior de SP 34,2%), e com o mesmo sotaque, o estilo também muda (Recife: 12,6% na fala preparada, 33,0% na espontânea). Os dois pesam.</p>
     <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
     <div class="grafico" id="g04b"></div>
   </section>
 
   <section id="q07"><div class="etiqueta">QUE07: GOA02, GOA03</div>
     <h2>Quanto o erro dos modelos aumenta com a fala atípica, e quanto diminui quando essa fala entra no treino?</h2>
-    <p class="explicacao">Aqui eu saio dos sotaques e vou pra fala atípica, com estudos em inglês, porque em português não existe dado. Um assistente de voz erra 5,65% das palavras de quem fala de forma fluente e 47,86% de quem tem gagueira grave, 8,5 vezes mais. E quando o modelo é treinado com a fala da própria pessoa (Project Euphonia), o erro cai.</p>
+    <p class="explicacao">Aqui eu deixo os sotaques e passo para a fala atípica, com estudos em inglês, porque em português não existe dado. Um assistente de voz erra 5,65% das palavras de quem fala de forma fluente e 47,86% de quem tem gagueira grave, 8,5 vezes mais. E quando o modelo é treinado com a fala da própria pessoa (Project Euphonia), o erro cai.</p>
     <h3>Gagueira: erro de um assistente de voz comercial por gravidade (Lea et al., 2021)</h3>
     <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
     <div class="grafico" id="g07a"></div>
@@ -109,7 +109,7 @@
 
   <section id="q10"><div class="etiqueta">QUE10: GOA01, GOA02, GOA03, GOA04</div>
     <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
-    <p class="explicacao">Pra fechar, eu juntei tudo em quatro gráficos: quantas pessoas ficam de fora dos dados, quanto o modelo erra a mais quando um grupo não está no treino, um teste que eu mesma fiz pra comprovar isso e o que muda na prática, em coisas como o diagnóstico de autismo e os assistentes de voz.</p>
+    <p class="explicacao">Para fechar, eu juntei tudo em quatro gráficos: quantas pessoas ficam de fora dos dados, quanto o modelo erra a mais quando um grupo não está no treino, um teste que eu mesma fiz para comprovar isso e o que muda na prática, em coisas como o diagnóstico de autismo e os assistentes de voz.</p>
     <h3>Quantos brasileiros ficam de fora dos dados</h3>
     <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
     <div class="grafico" id="g10a"></div>
@@ -117,7 +117,7 @@
     <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
     <div class="grafico" id="g10b"></div>
     <h3>Teste realizado: o mesmo modelo e as mesmas 4,9 h de treino, com 0, 0,5 e 1 h do interior de SP</h3>
-    <p class="explicacao">Fiz esse teste pra mostrar, com as minhas próprias mãos, que ter o sotaque nos dados de treino melhora o modelo naquele sotaque. Peguei o Whisper-small (da OpenAI, lançado em setembro de 2022, com 244 milhões de parâmetros) e treinei três vezes numa RTX 5090 de 32 GB, sempre com as mesmas 4,9 horas de fala do conjunto dev do CORAA: uma vez sem nada do interior de SP, uma com meia hora e outra com 1 hora. Cada treino levou de 8 a 20 minutos. Depois testei os três modelos nos mesmos 3.555 trechos do conjunto de teste. Com meia hora de interior de SP no treino, o erro nesse sotaque já caiu de 42,4% pra 38,4%, e nos outros sotaques não mudou nada.</p>
+    <p class="explicacao">Fiz esse teste para mostrar que ter o sotaque nos dados de treino melhora o modelo naquele sotaque. Usei o Whisper-small (da OpenAI, lançado em setembro de 2022, com 244 milhões de parâmetros) e treinei três vezes em uma RTX 5090 de 32 GB, sempre com as mesmas 4,9 horas de fala do conjunto dev do CORAA: uma vez sem nada do interior de SP, uma com meia hora e outra com 1 hora. Cada treino levou de 8 a 20 minutos. Depois testei os três modelos nos mesmos 3.555 trechos do conjunto de teste. Com meia hora de interior de SP no treino, o erro nesse sotaque já caiu de 42,4% para 38,4%, e nos outros sotaques não mudou nada (como deveria ser).</p>
     <p class="tipo">Gráfico: <strong>Barras agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a></p>
     <div class="grafico" id="g10d"></div>
     <h3>O erro em cada função dos modelos, com e sem aquela fala nos dados de treino</h3>
