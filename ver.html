@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ver um gráfico</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="lib/d3.min.js"></script>
+<script src="lib/d3-sankey.min.js"></script>
+</head>
+<body>
+<!-- Mostra um grafico sozinho. Uso: ver.html?g=g08&arquivo=q08-barras (ou g=g03a,g03b)
+     (g = id do container que o grafico usa; arquivo = nome do .js em graficos/) -->
+<main style="padding-top:20px">
+  <div class="grafico" id="alvo"></div>
+</main>
+<div id="tooltip"></div>
+<script src="graficos/comum.js"></script>
+<script>
+  const p = new URLSearchParams(location.search);
+  // g pode ter varios ids separados por virgula (pergunta com mais de um grafico)
+  const alvo = document.getElementById("alvo");
+  p.get("g").split(",").forEach(id => {
+    const d = document.createElement("div");
+    d.className = "grafico"; d.id = id;
+    alvo.before(d);
+  });
+  alvo.remove();
+  const s = document.createElement("script");
+  s.src = "graficos/" + p.get("arquivo") + ".js";
+  document.body.appendChild(s);
+</script>
+</body>
+</html>

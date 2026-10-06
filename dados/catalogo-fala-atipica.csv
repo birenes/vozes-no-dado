@@ -1,0 +1,12 @@
+﻿corpus,idioma,condicao,falantes_total,falantes_com_condicao,horas,acesso,fonte,conferido
+Project Euphonia,inglês,"várias (disartria, ELA, Parkinson e outras)",1330,1330,1400,fechado,"Google Research blog, 2021",sim
+Speech Accessibility Project,inglês,"Parkinson, ELA, paralisia cerebral, AVC, Down",430,430,333,restrito,"Interspeech 2025 SAP Challenge, arXiv 2507.22047",sim
+VA-Dysfluent,inglês,gagueira,18,18,3,fechado,"Lea et al., arXiv 2106.11759",sim
+SEP-28k,inglês,gagueira,,,23.5,aberto,"Lea et al., arXiv 2102.12394","sim: 28.177 trechos de 385 podcasts, sem contagem de pessoas"
+TORGO,inglês,disartria,15,8,,aberto,"Rudzicz et al., Universidade de Toronto",sim: 8 com disartria e 7 de controle
+EasyCall,italiano,"disartria (Parkinson, Huntington, ELA)",47,26,,aberto,"Turrisi et al., arXiv 2104.02542",sim: 26 com disartria e 21 de controle
+NeuroVoz,espanhol,Parkinson,112,54,,aberto,"Mendes-Laureano et al., Scientific Data 2024",sim: 54 com Parkinson e 58 de controle
+FraLusoPark,português europeu,Parkinson,158,84,,restrito,arXiv 2505.15378,sim: 84 com Parkinson e 74 de controle
+SPIRA,português brasileiro,insuficiência respiratória (COVID),194,95,,restrito,arXiv 2407.20989,"sim: 95 pacientes e 99 de controle, gravações anotadas"
+Sessões de diagnóstico ADOS,inglês,autismo (crianças em avaliação clínica),165,86,17,fechado,"Ashvin et al., WOCCI 2025, arXiv 2409.16135","sim: 165 sessões, 86 crianças com autismo; dados internos de duas clínicas (Michigan e Cincinnati); 17 h no total, 8 h de fala das crianças"
+Fala autista em coreano,coreano,autismo,4,4,7.74,não informado,"Park e Lee, Interspeech 2025","sim: 4 falantes autistas lendo comandos de voz; o artigo não diz se os dados são públicos"

@@ -1,0 +1,1867 @@
+{
+ "linguas": [
+  {
+   "lingua": "Tikúna",
+   "codigo": "4.1.9.",
+   "tronco": "4",
+   "falantes": 51978
+  },
+  {
+   "lingua": "Guarani Kaiowá",
+   "codigo": "2.9.13.",
+   "tronco": "2",
+   "falantes": 38658
+  },
+  {
+   "lingua": "Guajajara",
+   "codigo": "2.9.11.",
+   "tronco": "2",
+   "falantes": 29212
+  },
+  {
+   "lingua": "Kaingang",
+   "codigo": "1.3.6.",
+   "tronco": "1",
+   "falantes": 27482
+  },
+  {
+   "lingua": "Xavante",
+   "codigo": "1.3.23.",
+   "tronco": "1",
+   "falantes": 21772
+  },
+  {
+   "lingua": "Yanomami",
+   "codigo": "3.16.5.",
+   "tronco": "3",
+   "falantes": 19174
+  },
+  {
+   "lingua": "Sateré-Mawé",
+   "codigo": "2.3.1.",
+   "tronco": "2",
+   "falantes": 15421
+  },
+  {
+   "lingua": "Nheengatu",
+   "codigo": "2.9.25.",
+   "tronco": "2",
+   "falantes": 13070
+  },
+  {
+   "lingua": "Munduruku",
+   "codigo": "2.5.2.",
+   "tronco": "2",
+   "falantes": 12961
+  },
+  {
+   "lingua": "Tukano",
+   "codigo": "3.13.12.",
+   "tronco": "3",
+   "falantes": 12435
+  },
+  {
+   "lingua": "Terena",
+   "codigo": "3.2.14.",
+   "tronco": "3",
+   "falantes": 9570
+  },
+  {
+   "lingua": "Kaxinawá",
+   "codigo": "3.12.3.",
+   "tronco": "3",
+   "falantes": 9493
+  },
+  {
+   "lingua": "Guarani Mbya",
+   "codigo": "2.9.14.",
+   "tronco": "2",
+   "falantes": 8538
+  },
+  {
+   "lingua": "Kayapó",
+   "codigo": "1.3.10.",
+   "tronco": "1",
+   "falantes": 8525
+  },
+  {
+   "lingua": "Guarani",
+   "codigo": "2.9.12.",
+   "tronco": "2",
+   "falantes": 8235
+  },
+  {
+   "lingua": "Makuxí",
+   "codigo": "3.7.18.",
+   "tronco": "3",
+   "falantes": 7530
+  },
+  {
+   "lingua": "Kulina Madijá",
+   "codigo": "3.1.6.",
+   "tronco": "3",
+   "falantes": 6633
+  },
+  {
+   "lingua": "Baniwa",
+   "codigo": "3.2.3.",
+   "tronco": "3",
+   "falantes": 6338
+  },
+  {
+   "lingua": "Guarani Nhandeva",
+   "codigo": "2.9.15.",
+   "tronco": "2",
+   "falantes": 6284
+  },
+  {
+   "lingua": "Pataxó",
+   "codigo": "1.8.2.",
+   "tronco": "1",
+   "falantes": 5426
+  },
+  {
+   "lingua": "Wapixana",
+   "codigo": "3.2.15.",
+   "tronco": "3",
+   "falantes": 5191
+  },
+  {
+   "lingua": "Warao",
+   "codigo": "8.1.7.",
+   "tronco": "8",
+   "falantes": 4329
+  },
+  {
+   "lingua": "Xerente",
+   "codigo": "1.3.24.",
+   "tronco": "1",
+   "falantes": 4005
+  },
+  {
+   "lingua": "Ka'apor",
+   "codigo": "2.9.18.",
+   "tronco": "2",
+   "falantes": 3816
+  },
+  {
+   "lingua": "Krahô",
+   "codigo": "1.3.12.",
+   "tronco": "1",
+   "falantes": 3623
+  },
+  {
+   "lingua": "Wai Wai",
+   "codigo": "3.7.25.",
+   "tronco": "3",
+   "falantes": 3603
+  },
+  {
+   "lingua": "Karajá",
+   "codigo": "1.5.1.",
+   "tronco": "1",
+   "falantes": 3571
+  },
+  {
+   "lingua": "Sanumá",
+   "codigo": "3.16.2.",
+   "tronco": "3",
+   "falantes": 3561
+  },
+  {
+   "lingua": "Kanamarí",
+   "codigo": "3.8.1.",
+   "tronco": "3",
+   "falantes": 3558
+  },
+  {
+   "lingua": "Avá Guarani",
+   "codigo": "2.9.7.",
+   "tronco": "2",
+   "falantes": 3503
+  },
+  {
+   "lingua": "Yathê",
+   "codigo": "1.11.1.",
+   "tronco": "1",
+   "falantes": 3250
+  },
+  {
+   "lingua": "Apinayé",
+   "codigo": "1.3.1.",
+   "tronco": "1",
+   "falantes": 2657
+  },
+  {
+   "lingua": "Tupi-Mondé",
+   "codigo": "2.4.5.",
+   "tronco": "2",
+   "falantes": 2530
+  },
+  {
+   "lingua": "Kokama",
+   "codigo": "2.9.24.",
+   "tronco": "2",
+   "falantes": 2476
+  },
+  {
+   "lingua": "Maxakali",
+   "codigo": "1.8.1.",
+   "tronco": "1",
+   "falantes": 2409
+  },
+  {
+   "lingua": "Xikrin",
+   "codigo": "1.3.25.",
+   "tronco": "1",
+   "falantes": 2391
+  },
+  {
+   "lingua": "Kanela Rankokamekrá",
+   "codigo": "1.3.9.",
+   "tronco": "1",
+   "falantes": 2313
+  },
+  {
+   "lingua": "Waimiri Atroari",
+   "codigo": "3.7.26.",
+   "tronco": "3",
+   "falantes": 2242
+  },
+  {
+   "lingua": "Hupd'äh",
+   "codigo": "3.10.2.",
+   "tronco": "3",
+   "falantes": 2209
+  },
+  {
+   "lingua": "Marúbo",
+   "codigo": "3.12.6.",
+   "tronco": "3",
+   "falantes": 2171
+  },
+  {
+   "lingua": "Taurepang",
+   "codigo": "3.7.22.",
+   "tronco": "3",
+   "falantes": 2170
+  },
+  {
+   "lingua": "Kuripako",
+   "codigo": "3.2.7.",
+   "tronco": "3",
+   "falantes": 2056
+  },
+  {
+   "lingua": "Tiriyó",
+   "codigo": "3.7.23.",
+   "tronco": "3",
+   "falantes": 2043
+  },
+  {
+   "lingua": "Parakanã (Awaeté Xeenga)",
+   "codigo": "2.9.26.",
+   "tronco": "2",
+   "falantes": 1995
+  },
+  {
+   "lingua": "Paresí",
+   "codigo": "3.2.12.",
+   "tronco": "3",
+   "falantes": 1964
+  },
+  {
+   "lingua": "Oro Náo",
+   "codigo": "3.14.7.",
+   "tronco": "3",
+   "falantes": 1892
+  },
+  {
+   "lingua": "Tupinambá",
+   "codigo": "6.1.34.",
+   "tronco": "6",
+   "falantes": 1877
+  },
+  {
+   "lingua": "Patuá (Crioula)",
+   "codigo": "5.1.4.",
+   "tronco": "5",
+   "falantes": 1875
+  },
+  {
+   "lingua": "Apurinã",
+   "codigo": "3.2.1.",
+   "tronco": "3",
+   "falantes": 1862
+  },
+  {
+   "lingua": "Kaiabi (Kawaiwete)",
+   "codigo": "2.9.19.",
+   "tronco": "2",
+   "falantes": 1861
+  },
+  {
+   "lingua": "Kheuól Karipuna",
+   "codigo": "5.1.3.",
+   "tronco": "5",
+   "falantes": 1726
+  },
+  {
+   "lingua": "Karajá Javaé",
+   "codigo": "1.5.2.",
+   "tronco": "1",
+   "falantes": 1715
+  },
+  {
+   "lingua": "Ingarikó",
+   "codigo": "3.7.11.",
+   "tronco": "3",
+   "falantes": 1705
+  },
+  {
+   "lingua": "Ashaninka",
+   "codigo": "3.2.2.",
+   "tronco": "3",
+   "falantes": 1675
+  },
+  {
+   "lingua": "Dení",
+   "codigo": "3.1.3.",
+   "tronco": "3",
+   "falantes": 1660
+  },
+  {
+   "lingua": "Wajãpi",
+   "codigo": "2.9.36.",
+   "tronco": "2",
+   "falantes": 1618
+  },
+  {
+   "lingua": "Palikur",
+   "codigo": "3.2.11.",
+   "tronco": "3",
+   "falantes": 1541
+  },
+  {
+   "lingua": "Tupi não especificado",
+   "codigo": "2.10.1.",
+   "tronco": "2",
+   "falantes": 1475
+  },
+  {
+   "lingua": "Yamináwa",
+   "codigo": "3.12.16.",
+   "tronco": "3",
+   "falantes": 1461
+  },
+  {
+   "lingua": "Bororo",
+   "codigo": "1.1.1.",
+   "tronco": "1",
+   "falantes": 1391
+  },
+  {
+   "lingua": "Matsés",
+   "codigo": "3.12.9.",
+   "tronco": "3",
+   "falantes": 1374
+  },
+  {
+   "lingua": "Manchineri",
+   "codigo": "3.2.8.",
+   "tronco": "3",
+   "falantes": 1338
+  },
+  {
+   "lingua": "Aimara",
+   "codigo": "8.1.1.",
+   "tronco": "8",
+   "falantes": 1292
+  },
+  {
+   "lingua": "Mebêngôkre Kayapó",
+   "codigo": "1.3.16.",
+   "tronco": "1",
+   "falantes": 1291
+  },
+  {
+   "lingua": "Tembé",
+   "codigo": "2.9.30.",
+   "tronco": "2",
+   "falantes": 1273
+  },
+  {
+   "lingua": "Hixkaryana",
+   "codigo": "3.7.9.",
+   "tronco": "3",
+   "falantes": 1216
+  },
+  {
+   "lingua": "Tupi-Potiguara",
+   "codigo": "2.9.35.",
+   "tronco": "2",
+   "falantes": 1203
+  },
+  {
+   "lingua": "Tupi-Guarani",
+   "codigo": "2.9.33.",
+   "tronco": "2",
+   "falantes": 1143
+  },
+  {
+   "lingua": "Krikati",
+   "codigo": "1.3.15.",
+   "tronco": "1",
+   "falantes": 1127
+  },
+  {
+   "lingua": "Mayoruna",
+   "codigo": "3.12.10.",
+   "tronco": "3",
+   "falantes": 1105
+  },
+  {
+   "lingua": "Txapakura não especificado",
+   "codigo": "3.14.3.",
+   "tronco": "3",
+   "falantes": 1088
+  },
+  {
+   "lingua": "Nambikwára",
+   "codigo": "3.11.8.",
+   "tronco": "3",
+   "falantes": 1048
+  },
+  {
+   "lingua": "Bakairi",
+   "codigo": "3.7.6.",
+   "tronco": "3",
+   "falantes": 996
+  },
+  {
+   "lingua": "Xokléng",
+   "codigo": "1.3.26.",
+   "tronco": "1",
+   "falantes": 975
+  },
+  {
+   "lingua": "Tapirapé",
+   "codigo": "2.9.29.",
+   "tronco": "2",
+   "falantes": 972
+  },
+  {
+   "lingua": "Enawenê-Nawê",
+   "codigo": "3.2.4.",
+   "tronco": "3",
+   "falantes": 955
+  },
+  {
+   "lingua": "Noke Vana",
+   "codigo": "3.12.11.",
+   "tronco": "3",
+   "falantes": 950
+  },
+  {
+   "lingua": "Ye'kwana",
+   "codigo": "3.7.29.",
+   "tronco": "3",
+   "falantes": 908
+  },
+  {
+   "lingua": "Apalai",
+   "codigo": "3.7.3.",
+   "tronco": "3",
+   "falantes": 899
+  },
+  {
+   "lingua": "Kadiwéu",
+   "codigo": "3.5.1.",
+   "tronco": "3",
+   "falantes": 891
+  },
+  {
+   "lingua": "Ninám",
+   "codigo": "3.16.1.",
+   "tronco": "3",
+   "falantes": 888
+  },
+  {
+   "lingua": "Paiter",
+   "codigo": "2.4.3.",
+   "tronco": "2",
+   "falantes": 871
+  },
+  {
+   "lingua": "Kalapalo",
+   "codigo": "3.7.12.",
+   "tronco": "3",
+   "falantes": 846
+  },
+  {
+   "lingua": "Jê não especificado",
+   "codigo": "1.3.5.",
+   "tronco": "1",
+   "falantes": 813
+  },
+  {
+   "lingua": "Pirahã",
+   "codigo": "3.9.2.",
+   "tronco": "3",
+   "falantes": 801
+  },
+  {
+   "lingua": "Zoró",
+   "codigo": "2.4.6.",
+   "tronco": "2",
+   "falantes": 784
+  },
+  {
+   "lingua": "Kuikuro",
+   "codigo": "3.7.17.",
+   "tronco": "3",
+   "falantes": 778
+  },
+  {
+   "lingua": "Quechua",
+   "codigo": "8.1.5.",
+   "tronco": "8",
+   "falantes": 770
+  },
+  {
+   "lingua": "Wanano",
+   "codigo": "3.13.14.",
+   "tronco": "3",
+   "falantes": 761
+  },
+  {
+   "lingua": "Kanela Apanyekrá",
+   "codigo": "1.3.7.",
+   "tronco": "1",
+   "falantes": 759
+  },
+  {
+   "lingua": "Katukina do Rio Biá (Pedá Djapá)",
+   "codigo": "3.8.3.",
+   "tronco": "3",
+   "falantes": 755
+  },
+  {
+   "lingua": "Yuhupdëh",
+   "codigo": "3.10.5.",
+   "tronco": "3",
+   "falantes": 754
+  },
+  {
+   "lingua": "Tuyúca",
+   "codigo": "3.13.13.",
+   "tronco": "3",
+   "falantes": 751
+  },
+  {
+   "lingua": "Gavião de Rondônia",
+   "codigo": "2.4.2.",
+   "tronco": "2",
+   "falantes": 741
+  },
+  {
+   "lingua": "Tenharim",
+   "codigo": "2.9.32.",
+   "tronco": "2",
+   "falantes": 713
+  },
+  {
+   "lingua": "Nadëb",
+   "codigo": "3.10.3.",
+   "tronco": "3",
+   "falantes": 686
+  },
+  {
+   "lingua": "Kheuól Galibí Marwórno",
+   "codigo": "5.1.2.",
+   "tronco": "5",
+   "falantes": 679
+  },
+  {
+   "lingua": "Katxuyana",
+   "codigo": "3.7.16.",
+   "tronco": "3",
+   "falantes": 674
+  },
+  {
+   "lingua": "Kubeo",
+   "codigo": "3.13.6.",
+   "tronco": "3",
+   "falantes": 646
+  },
+  {
+   "lingua": "Xiriana",
+   "codigo": "3.16.3.",
+   "tronco": "3",
+   "falantes": 645
+  },
+  {
+   "lingua": "Awa Guajá",
+   "codigo": "2.9.9.",
+   "tronco": "2",
+   "falantes": 626
+  },
+  {
+   "lingua": "Waura",
+   "codigo": "3.2.17.",
+   "tronco": "3",
+   "falantes": 610
+  },
+  {
+   "lingua": "Kisêdjê",
+   "codigo": "1.3.11.",
+   "tronco": "1",
+   "falantes": 587
+  },
+  {
+   "lingua": "Matís",
+   "codigo": "3.12.8.",
+   "tronco": "3",
+   "falantes": 575
+  },
+  {
+   "lingua": "Ikpeng",
+   "codigo": "3.7.10.",
+   "tronco": "3",
+   "falantes": 574
+  },
+  {
+   "lingua": "Panará",
+   "codigo": "1.3.19.",
+   "tronco": "1",
+   "falantes": 560
+  },
+  {
+   "lingua": "Arara do Pará",
+   "codigo": "3.7.4.",
+   "tronco": "3",
+   "falantes": 559
+  },
+  {
+   "lingua": "Jamamadi",
+   "codigo": "3.1.4.",
+   "tronco": "3",
+   "falantes": 555
+  },
+  {
+   "lingua": "Kambéba",
+   "codigo": "2.9.21.",
+   "tronco": "2",
+   "falantes": 551
+  },
+  {
+   "lingua": "Paumarí",
+   "codigo": "3.1.7.",
+   "tronco": "3",
+   "falantes": 542
+  },
+  {
+   "lingua": "Yanomán",
+   "codigo": "3.16.6.",
+   "tronco": "3",
+   "falantes": 531
+  },
+  {
+   "lingua": "Araweté",
+   "codigo": "2.9.4.",
+   "tronco": "2",
+   "falantes": 519
+  },
+  {
+   "lingua": "Yawanawá",
+   "codigo": "3.12.17.",
+   "tronco": "3",
+   "falantes": 519
+  },
+  {
+   "lingua": "Rikbaktsa",
+   "codigo": "1.10.1.",
+   "tronco": "1",
+   "falantes": 515
+  },
+  {
+   "lingua": "Suruí do Pará",
+   "codigo": "2.9.28.",
+   "tronco": "2",
+   "falantes": 504
+  },
+  {
+   "lingua": "Oro Waram",
+   "codigo": "3.14.8.",
+   "tronco": "3",
+   "falantes": 476
+  },
+  {
+   "lingua": "Wayana",
+   "codigo": "3.7.27.",
+   "tronco": "3",
+   "falantes": 462
+  },
+  {
+   "lingua": "Tenetehára",
+   "codigo": "2.9.31.",
+   "tronco": "2",
+   "falantes": 457
+  },
+  {
+   "lingua": "Karib não especificado",
+   "codigo": "3.7.14.",
+   "tronco": "3",
+   "falantes": 456
+  },
+  {
+   "lingua": "Patamóna",
+   "codigo": "3.7.21.",
+   "tronco": "3",
+   "falantes": 450
+  },
+  {
+   "lingua": "Múra",
+   "codigo": "3.9.1.",
+   "tronco": "3",
+   "falantes": 437
+  },
+  {
+   "lingua": "Pataxó Hã-Hã-Hãe",
+   "codigo": "1.8.3.",
+   "tronco": "1",
+   "falantes": 416
+  },
+  {
+   "lingua": "Shanenáwa",
+   "codigo": "3.12.15.",
+   "tronco": "3",
+   "falantes": 415
+  },
+  {
+   "lingua": "Tuparí",
+   "codigo": "2.8.5.",
+   "tronco": "2",
+   "falantes": 404
+  },
+  {
+   "lingua": "Xukuru",
+   "codigo": "4.1.11.",
+   "tronco": "4",
+   "falantes": 370
+  },
+  {
+   "lingua": "Kipéa",
+   "codigo": "1.6.3.",
+   "tronco": "1",
+   "falantes": 359
+  },
+  {
+   "lingua": "Dzubokuá",
+   "codigo": "1.6.1.",
+   "tronco": "1",
+   "falantes": 354
+  },
+  {
+   "lingua": "Arara de Rondônia (Arara Karo)",
+   "codigo": "2.7.1.",
+   "tronco": "2",
+   "falantes": 351
+  },
+  {
+   "lingua": "Mamaindê",
+   "codigo": "3.11.6.",
+   "tronco": "3",
+   "falantes": 341
+  },
+  {
+   "lingua": "Mehináku",
+   "codigo": "3.2.10.",
+   "tronco": "3",
+   "falantes": 326
+  },
+  {
+   "lingua": "Kaxarari",
+   "codigo": "3.12.2.",
+   "tronco": "3",
+   "falantes": 326
+  },
+  {
+   "lingua": "Karitiana",
+   "codigo": "2.1.1.",
+   "tronco": "2",
+   "falantes": 313
+  },
+  {
+   "lingua": "Zo'é",
+   "codigo": "2.9.38.",
+   "tronco": "2",
+   "falantes": 311
+  },
+  {
+   "lingua": "Asurini do Xingu",
+   "codigo": "2.9.6.",
+   "tronco": "2",
+   "falantes": 270
+  },
+  {
+   "lingua": "Aweti",
+   "codigo": "2.9.10.",
+   "tronco": "2",
+   "falantes": 267
+  },
+  {
+   "lingua": "Xacriabá",
+   "codigo": "1.3.22.",
+   "tronco": "1",
+   "falantes": 263
+  },
+  {
+   "lingua": "Krenák",
+   "codigo": "1.7.1.",
+   "tronco": "1",
+   "falantes": 263
+  },
+  {
+   "lingua": "Xipáya",
+   "codigo": "2.2.1.",
+   "tronco": "2",
+   "falantes": 261
+  },
+  {
+   "lingua": "Desána",
+   "codigo": "3.13.4.",
+   "tronco": "3",
+   "falantes": 261
+  },
+  {
+   "lingua": "Tariana",
+   "codigo": "3.2.13.",
+   "tronco": "3",
+   "falantes": 257
+  },
+  {
+   "lingua": "Poyanáwa",
+   "codigo": "3.12.14.",
+   "tronco": "3",
+   "falantes": 252
+  },
+  {
+   "lingua": "Banawá",
+   "codigo": "3.1.2.",
+   "tronco": "3",
+   "falantes": 227
+  },
+  {
+   "lingua": "Yudjá",
+   "codigo": "2.2.2.",
+   "tronco": "2",
+   "falantes": 212
+  },
+  {
+   "lingua": "Arara do Acre (Arara Shawãdawa)",
+   "codigo": "3.12.1.",
+   "tronco": "3",
+   "falantes": 208
+  },
+  {
+   "lingua": "Trumái",
+   "codigo": "4.1.10.",
+   "tronco": "4",
+   "falantes": 208
+  },
+  {
+   "lingua": "Korubo",
+   "codigo": "3.12.4.",
+   "tronco": "3",
+   "falantes": 204
+  },
+  {
+   "lingua": "Piratapuia (Waikhana)",
+   "codigo": "3.13.9.",
+   "tronco": "3",
+   "falantes": 200
+  },
+  {
+   "lingua": "Aikanã",
+   "codigo": "4.1.1.",
+   "tronco": "4",
+   "falantes": 200
+  },
+  {
+   "lingua": "Timbira",
+   "codigo": "1.3.21.",
+   "tronco": "1",
+   "falantes": 195
+  },
+  {
+   "lingua": "Pankararú",
+   "codigo": "6.1.25.",
+   "tronco": "6",
+   "falantes": 190
+  },
+  {
+   "lingua": "Oro At",
+   "codigo": "3.14.4.",
+   "tronco": "3",
+   "falantes": 182
+  },
+  {
+   "lingua": "Macro-Jê não especificado",
+   "codigo": "1.12.1.",
+   "tronco": "1",
+   "falantes": 180
+  },
+  {
+   "lingua": "Makúna",
+   "codigo": "3.13.7.",
+   "tronco": "3",
+   "falantes": 178
+  },
+  {
+   "lingua": "Xirixana",
+   "codigo": "3.16.4.",
+   "tronco": "3",
+   "falantes": 175
+  },
+  {
+   "lingua": "Gavião Parkatêjê",
+   "codigo": "1.3.3.",
+   "tronco": "1",
+   "falantes": 173
+  },
+  {
+   "lingua": "Asurini do Tocantins",
+   "codigo": "2.9.5.",
+   "tronco": "2",
+   "falantes": 172
+  },
+  {
+   "lingua": "Suruwaha",
+   "codigo": "3.1.8.",
+   "tronco": "3",
+   "falantes": 165
+  },
+  {
+   "lingua": "Negarotê",
+   "codigo": "3.11.9.",
+   "tronco": "3",
+   "falantes": 163
+  },
+  {
+   "lingua": "Jarawára",
+   "codigo": "3.1.5.",
+   "tronco": "3",
+   "falantes": 162
+  },
+  {
+   "lingua": "Aruak não especificado",
+   "codigo": "3.2.20.",
+   "tronco": "3",
+   "falantes": 162
+  },
+  {
+   "lingua": "Nahukuá",
+   "codigo": "3.7.20.",
+   "tronco": "3",
+   "falantes": 156
+  },
+  {
+   "lingua": "Oro Eo",
+   "codigo": "3.14.5.",
+   "tronco": "3",
+   "falantes": 147
+  },
+  {
+   "lingua": "Tapayuna",
+   "codigo": "1.3.20.",
+   "tronco": "1",
+   "falantes": 144
+  },
+  {
+   "lingua": "Dâw",
+   "codigo": "3.10.1.",
+   "tronco": "3",
+   "falantes": 144
+  },
+  {
+   "lingua": "Menkü (Myky Manoki)",
+   "codigo": "4.1.7.",
+   "tronco": "4",
+   "falantes": 144
+  },
+  {
+   "lingua": "Chiquitáno",
+   "codigo": "3.4.1.",
+   "tronco": "3",
+   "falantes": 137
+  },
+  {
+   "lingua": "Atikum",
+   "codigo": "6.1.4.",
+   "tronco": "6",
+   "falantes": 137
+  },
+  {
+   "lingua": "Quíchua",
+   "codigo": "8.1.6.",
+   "tronco": "8",
+   "falantes": 130
+  },
+  {
+   "lingua": "Wasusu",
+   "codigo": "3.11.13.",
+   "tronco": "3",
+   "falantes": 129
+  },
+  {
+   "lingua": "Kariri-Xocó",
+   "codigo": "6.1.14.",
+   "tronco": "6",
+   "falantes": 127
+  },
+  {
+   "lingua": "Kawahíba dos Amondáwa",
+   "codigo": "2.9.22.",
+   "tronco": "2",
+   "falantes": 125
+  },
+  {
+   "lingua": "Galibi Kali'na",
+   "codigo": "3.7.8.",
+   "tronco": "3",
+   "falantes": 113
+  },
+  {
+   "lingua": "Kuruáya",
+   "codigo": "2.5.1.",
+   "tronco": "2",
+   "falantes": 112
+  },
+  {
+   "lingua": "Kaixana",
+   "codigo": "3.2.5.",
+   "tronco": "3",
+   "falantes": 109
+  },
+  {
+   "lingua": "Kamayurá",
+   "codigo": "2.9.20.",
+   "tronco": "2",
+   "falantes": 106
+  },
+  {
+   "lingua": "Aruá",
+   "codigo": "2.4.1.",
+   "tronco": "2",
+   "falantes": 104
+  },
+  {
+   "lingua": "Parintintim",
+   "codigo": "2.9.27.",
+   "tronco": "2",
+   "falantes": 101
+  },
+  {
+   "lingua": "Umutina",
+   "codigo": "1.1.2.",
+   "tronco": "1",
+   "falantes": 100
+  },
+  {
+   "lingua": "Creole do Amapá",
+   "codigo": "5.1.1.",
+   "tronco": "5",
+   "falantes": 96
+  },
+  {
+   "lingua": "Tapeba",
+   "codigo": "6.1.30.",
+   "tronco": "6",
+   "falantes": 96
+  },
+  {
+   "lingua": "Jiahui",
+   "codigo": "2.9.16.",
+   "tronco": "2",
+   "falantes": 92
+  },
+  {
+   "lingua": "Hahaintesu",
+   "codigo": "3.11.2.",
+   "tronco": "3",
+   "falantes": 92
+  },
+  {
+   "lingua": "Xambioá",
+   "codigo": "1.5.3.",
+   "tronco": "1",
+   "falantes": 91
+  },
+  {
+   "lingua": "Alantesú",
+   "codigo": "3.11.1.",
+   "tronco": "3",
+   "falantes": 91
+  },
+  {
+   "lingua": "Katwena",
+   "codigo": "3.7.15.",
+   "tronco": "3",
+   "falantes": 90
+  },
+  {
+   "lingua": "Faruk'woto",
+   "codigo": "3.7.7.",
+   "tronco": "3",
+   "falantes": 89
+  },
+  {
+   "lingua": "Makuráp",
+   "codigo": "2.8.3.",
+   "tronco": "2",
+   "falantes": 86
+  },
+  {
+   "lingua": "Miránha",
+   "codigo": "3.3.2.",
+   "tronco": "3",
+   "falantes": 86
+  },
+  {
+   "lingua": "Tupiniquim",
+   "codigo": "6.1.36.",
+   "tronco": "6",
+   "falantes": 86
+  },
+  {
+   "lingua": "Gavião Kykatejê",
+   "codigo": "1.3.2.",
+   "tronco": "1",
+   "falantes": 84
+  },
+  {
+   "lingua": "Nukiní",
+   "codigo": "3.12.12.",
+   "tronco": "3",
+   "falantes": 83
+  },
+  {
+   "lingua": "Oro Waram Xijein",
+   "codigo": "3.14.9.",
+   "tronco": "3",
+   "falantes": 81
+  },
+  {
+   "lingua": "Brobó",
+   "codigo": "1.2.1.",
+   "tronco": "1",
+   "falantes": 80
+  },
+  {
+   "lingua": "Pakaa Nova (Wari')",
+   "codigo": "3.14.11.",
+   "tronco": "3",
+   "falantes": 80
+  },
+  {
+   "lingua": "Truká",
+   "codigo": "6.1.33.",
+   "tronco": "6",
+   "falantes": 79
+  },
+  {
+   "lingua": "Amanayé",
+   "codigo": "2.9.1.",
+   "tronco": "2",
+   "falantes": 76
+  },
+  {
+   "lingua": "Kulina Pano",
+   "codigo": "3.12.5.",
+   "tronco": "3",
+   "falantes": 76
+  },
+  {
+   "lingua": "Outra língua das Américas",
+   "codigo": "8.1.4.",
+   "tronco": "8",
+   "falantes": 71
+  },
+  {
+   "lingua": "Guató",
+   "codigo": "4.1.3.",
+   "tronco": "4",
+   "falantes": 70
+  },
+  {
+   "lingua": "Kanela não especificado",
+   "codigo": "1.3.8.",
+   "tronco": "1",
+   "falantes": 69
+  },
+  {
+   "lingua": "Djeoromitxí-Jaboti",
+   "codigo": "3.6.2.",
+   "tronco": "3",
+   "falantes": 69
+  },
+  {
+   "lingua": "Maraguá",
+   "codigo": "6.1.19.",
+   "tronco": "6",
+   "falantes": 69
+  },
+  {
+   "lingua": "Kwaytikindo (Puri)",
+   "codigo": "6.1.18.",
+   "tronco": "6",
+   "falantes": 67
+  },
+  {
+   "lingua": "Menkrangnoti",
+   "codigo": "1.3.17.",
+   "tronco": "1",
+   "falantes": 63
+  },
+  {
+   "lingua": "Tapuia",
+   "codigo": "6.1.31.",
+   "tronco": "6",
+   "falantes": 62
+  },
+  {
+   "lingua": "Kariri",
+   "codigo": "1.6.2.",
+   "tronco": "1",
+   "falantes": 61
+  },
+  {
+   "lingua": "Apiaká",
+   "codigo": "2.9.3.",
+   "tronco": "2",
+   "falantes": 59
+  },
+  {
+   "lingua": "Aconã",
+   "codigo": "6.1.1.",
+   "tronco": "6",
+   "falantes": 59
+  },
+  {
+   "lingua": "Bará",
+   "codigo": "3.13.2.",
+   "tronco": "3",
+   "falantes": 57
+  },
+  {
+   "lingua": "Tupi-Kawahiwa não especificado",
+   "codigo": "2.9.34.",
+   "tronco": "2",
+   "falantes": 55
+  },
+  {
+   "lingua": "Pitaguari",
+   "codigo": "6.1.26.",
+   "tronco": "6",
+   "falantes": 54
+  },
+  {
+   "lingua": "Ypy",
+   "codigo": "6.1.41.",
+   "tronco": "6",
+   "falantes": 54
+  },
+  {
+   "lingua": "Sakurabiat",
+   "codigo": "2.8.4.",
+   "tronco": "2",
+   "falantes": 53
+  },
+  {
+   "lingua": "Eñepá",
+   "codigo": "8.1.2.",
+   "tronco": "8",
+   "falantes": 53
+  },
+  {
+   "lingua": "Arekuna",
+   "codigo": "3.7.5.",
+   "tronco": "3",
+   "falantes": 50
+  },
+  {
+   "lingua": "Tabajara",
+   "codigo": "6.1.28.",
+   "tronco": "6",
+   "falantes": 47
+  },
+  {
+   "lingua": "Ajuru",
+   "codigo": "2.8.1.",
+   "tronco": "2",
+   "falantes": 44
+  },
+  {
+   "lingua": "Tremembé",
+   "codigo": "6.1.32.",
+   "tronco": "6",
+   "falantes": 43
+  },
+  {
+   "lingua": "Pano não especificado",
+   "codigo": "3.12.13.",
+   "tronco": "3",
+   "falantes": 42
+  },
+  {
+   "lingua": "Nawa",
+   "codigo": "6.1.21.",
+   "tronco": "6",
+   "falantes": 41
+  },
+  {
+   "lingua": "Tuxá",
+   "codigo": "6.1.37.",
+   "tronco": "6",
+   "falantes": 41
+  },
+  {
+   "lingua": "Krenyê",
+   "codigo": "1.3.14.",
+   "tronco": "1",
+   "falantes": 39
+  },
+  {
+   "lingua": "Kamarakoto",
+   "codigo": "3.7.13.",
+   "tronco": "3",
+   "falantes": 38
+  },
+  {
+   "lingua": "Ruãynyn'reue",
+   "codigo": "4.1.8.",
+   "tronco": "4",
+   "falantes": 38
+  },
+  {
+   "lingua": "Kamakã",
+   "codigo": "1.4.1.",
+   "tronco": "1",
+   "falantes": 37
+  },
+  {
+   "lingua": "Sabanê",
+   "codigo": "3.11.10.",
+   "tronco": "3",
+   "falantes": 36
+  },
+  {
+   "lingua": "Barasána",
+   "codigo": "3.13.3.",
+   "tronco": "3",
+   "falantes": 36
+  },
+  {
+   "lingua": "Anambé",
+   "codigo": "2.9.2.",
+   "tronco": "2",
+   "falantes": 35
+  },
+  {
+   "lingua": "Ofayé",
+   "codigo": "1.9.1.",
+   "tronco": "1",
+   "falantes": 34
+  },
+  {
+   "lingua": "Avá-Canoeiro",
+   "codigo": "2.9.8.",
+   "tronco": "2",
+   "falantes": 34
+  },
+  {
+   "lingua": "Warapakai",
+   "codigo": "3.9.3.",
+   "tronco": "3",
+   "falantes": 33
+  },
+  {
+   "lingua": "Siriano (Siriãmahsã)",
+   "codigo": "3.13.10.",
+   "tronco": "3",
+   "falantes": 33
+  },
+  {
+   "lingua": "Xukurú-Kariri",
+   "codigo": "4.1.12.",
+   "tronco": "4",
+   "falantes": 33
+  },
+  {
+   "lingua": "Tawandê",
+   "codigo": "3.11.11.",
+   "tronco": "3",
+   "falantes": 32
+  },
+  {
+   "lingua": "Bremem Taipwenya",
+   "codigo": "6.1.7.",
+   "tronco": "6",
+   "falantes": 32
+  },
+  {
+   "lingua": "Pankará",
+   "codigo": "6.1.23.",
+   "tronco": "6",
+   "falantes": 32
+  },
+  {
+   "lingua": "Pankararé",
+   "codigo": "6.1.24.",
+   "tronco": "6",
+   "falantes": 31
+  },
+  {
+   "lingua": "Waikisu",
+   "codigo": "3.11.12.",
+   "tronco": "3",
+   "falantes": 29
+  },
+  {
+   "lingua": "Ybutritê",
+   "codigo": "6.1.40.",
+   "tronco": "6",
+   "falantes": 29
+  },
+  {
+   "lingua": "Kapinawá",
+   "codigo": "6.1.12.",
+   "tronco": "6",
+   "falantes": 28
+  },
+  {
+   "lingua": "Wayuu",
+   "codigo": "3.2.18.",
+   "tronco": "3",
+   "falantes": 27
+  },
+  {
+   "lingua": "Witóto",
+   "codigo": "3.15.1.",
+   "tronco": "3",
+   "falantes": 27
+  },
+  {
+   "lingua": "Paiaku (Jenipapo-Kanindé)",
+   "codigo": "6.1.22.",
+   "tronco": "6",
+   "falantes": 27
+  },
+  {
+   "lingua": "Kwazá",
+   "codigo": "4.1.6.",
+   "tronco": "4",
+   "falantes": 25
+  },
+  {
+   "lingua": "Mapuche",
+   "codigo": "8.1.3.",
+   "tronco": "8",
+   "falantes": 25
+  },
+  {
+   "lingua": "Irántxe",
+   "codigo": "4.1.4.",
+   "tronco": "4",
+   "falantes": 24
+  },
+  {
+   "lingua": "Kinikinau",
+   "codigo": "3.2.6.",
+   "tronco": "3",
+   "falantes": 23
+  },
+  {
+   "lingua": "Karapanã",
+   "codigo": "3.13.5.",
+   "tronco": "3",
+   "falantes": 23
+  },
+  {
+   "lingua": "Kiriri",
+   "codigo": "6.1.16.",
+   "tronco": "6",
+   "falantes": 23
+  },
+  {
+   "lingua": "Kambiwá",
+   "codigo": "6.1.9.",
+   "tronco": "6",
+   "falantes": 21
+  },
+  {
+   "lingua": "Gavião Pykopjê",
+   "codigo": "1.3.4.",
+   "tronco": "1",
+   "falantes": 20
+  },
+  {
+   "lingua": "Arawá",
+   "codigo": "3.1.1.",
+   "tronco": "3",
+   "falantes": 20
+  },
+  {
+   "lingua": "Oro Win",
+   "codigo": "3.14.10.",
+   "tronco": "3",
+   "falantes": 20
+  },
+  {
+   "lingua": "Halotesu",
+   "codigo": "3.11.3.",
+   "tronco": "3",
+   "falantes": 19
+  },
+  {
+   "lingua": "Mentuktire",
+   "codigo": "1.3.18.",
+   "tronco": "1",
+   "falantes": 18
+  },
+  {
+   "lingua": "Manduka",
+   "codigo": "3.11.7.",
+   "tronco": "3",
+   "falantes": 18
+  },
+  {
+   "lingua": "Oro Mon",
+   "codigo": "3.14.6.",
+   "tronco": "3",
+   "falantes": 18
+  },
+  {
+   "lingua": "Akawaio",
+   "codigo": "3.7.1.",
+   "tronco": "3",
+   "falantes": 17
+  },
+  {
+   "lingua": "Akroá Gamela",
+   "codigo": "4.1.2.",
+   "tronco": "4",
+   "falantes": 17
+  },
+  {
+   "lingua": "Kanoé",
+   "codigo": "4.1.5.",
+   "tronco": "4",
+   "falantes": 17
+  },
+  {
+   "lingua": "Sabujá",
+   "codigo": "6.1.27.",
+   "tronco": "6",
+   "falantes": 16
+  },
+  {
+   "lingua": "Arikapú",
+   "codigo": "3.6.1.",
+   "tronco": "3",
+   "falantes": 15
+  },
+  {
+   "lingua": "Yawalapití",
+   "codigo": "3.2.19.",
+   "tronco": "3",
+   "falantes": 14
+  },
+  {
+   "lingua": "Anacé",
+   "codigo": "6.1.2.",
+   "tronco": "6",
+   "falantes": 14
+  },
+  {
+   "lingua": "Tapajós",
+   "codigo": "6.1.29.",
+   "tronco": "6",
+   "falantes": 14
+  },
+  {
+   "lingua": "Kithaulu",
+   "codigo": "3.11.4.",
+   "tronco": "3",
+   "falantes": 13
+  },
+  {
+   "lingua": "Tupinambarana",
+   "codigo": "6.1.35.",
+   "tronco": "6",
+   "falantes": 13
+  },
+  {
+   "lingua": "Puroborá",
+   "codigo": "2.6.1.",
+   "tronco": "2",
+   "falantes": 12
+  },
+  {
+   "lingua": "Tanimuka",
+   "codigo": "3.13.11.",
+   "tronco": "3",
+   "falantes": 12
+  },
+  {
+   "lingua": "Borari",
+   "codigo": "6.1.5.",
+   "tronco": "6",
+   "falantes": 12
+  },
+  {
+   "lingua": "Karapotó",
+   "codigo": "6.1.13.",
+   "tronco": "6",
+   "falantes": 12
+  },
+  {
+   "lingua": "Xocó",
+   "codigo": "1.6.4.",
+   "tronco": "1",
+   "falantes": 11
+  },
+  {
+   "lingua": "Ramarama não especificado",
+   "codigo": "2.7.2.",
+   "tronco": "2",
+   "falantes": 11
+  },
+  {
+   "lingua": "Xetá",
+   "codigo": "2.9.37.",
+   "tronco": "2",
+   "falantes": 11
+  },
+  {
+   "lingua": "Xerewyana",
+   "codigo": "3.7.28.",
+   "tronco": "3",
+   "falantes": 11
+  },
+  {
+   "lingua": "Mawayána",
+   "codigo": "3.2.9.",
+   "tronco": "3",
+   "falantes": 10
+  },
+  {
+   "lingua": "Tunayana",
+   "codigo": "3.7.24.",
+   "tronco": "3",
+   "falantes": 10
+  },
+  {
+   "lingua": "Arapium",
+   "codigo": "6.1.3.",
+   "tronco": "6",
+   "falantes": 10
+  },
+  {
+   "lingua": "Wassú",
+   "codigo": "6.1.39.",
+   "tronco": "6",
+   "falantes": 10
+  },
+  {
+   "lingua": "Warekena",
+   "codigo": "3.2.16.",
+   "tronco": "3",
+   "falantes": 9
+  },
+  {
+   "lingua": "Matipú",
+   "codigo": "3.7.19.",
+   "tronco": "3",
+   "falantes": 9
+  },
+  {
+   "lingua": "Puinave",
+   "codigo": "3.10.4.",
+   "tronco": "3",
+   "falantes": 9
+  },
+  {
+   "lingua": "Arapaso",
+   "codigo": "3.13.1.",
+   "tronco": "3",
+   "falantes": 9
+  },
+  {
+   "lingua": "Kumaruara",
+   "codigo": "6.1.17.",
+   "tronco": "6",
+   "falantes": 9
+  },
+  {
+   "lingua": "Maytapu",
+   "codigo": "6.1.20.",
+   "tronco": "6",
+   "falantes": 9
+  },
+  {
+   "lingua": "Língua de Sinais Urubu Ka’apor",
+   "codigo": "7.1.3.",
+   "tronco": "7",
+   "falantes": 9
+  },
+  {
+   "lingua": "Kawahíba dos Karipuna",
+   "codigo": "2.9.23.",
+   "tronco": "2",
+   "falantes": 7
+  },
+  {
+   "lingua": "Latundê",
+   "codigo": "3.11.5.",
+   "tronco": "3",
+   "falantes": 7
+  },
+  {
+   "lingua": "Kujubim",
+   "codigo": "3.14.1.",
+   "tronco": "3",
+   "falantes": 7
+  },
+  {
+   "lingua": "Botocudo",
+   "codigo": "6.1.6.",
+   "tronco": "6",
+   "falantes": 6
+  },
+  {
+   "lingua": "Akuriyó",
+   "codigo": "3.7.2.",
+   "tronco": "3",
+   "falantes": 5
+  },
+  {
+   "lingua": "Mastanawa",
+   "codigo": "3.12.7.",
+   "tronco": "3",
+   "falantes": 5
+  },
+  {
+   "lingua": "Kreepyn-Katejê",
+   "codigo": "1.3.13.",
+   "tronco": "1",
+   "falantes": 4
+  },
+  {
+   "lingua": "Bora não especificado",
+   "codigo": "3.3.1.",
+   "tronco": "3",
+   "falantes": 4
+  },
+  {
+   "lingua": "Torá",
+   "codigo": "3.14.2.",
+   "tronco": "3",
+   "falantes": 4
+  },
+  {
+   "lingua": "Kaxixó",
+   "codigo": "6.1.15.",
+   "tronco": "6",
+   "falantes": 4
+  },
+  {
+   "lingua": "Tuxi",
+   "codigo": "6.1.38.",
+   "tronco": "6",
+   "falantes": 4
+  },
+  {
+   "lingua": "Akuntsu",
+   "codigo": "2.8.2.",
+   "tronco": "2",
+   "falantes": 3
+  },
+  {
+   "lingua": "Juma",
+   "codigo": "2.9.17.",
+   "tronco": "2",
+   "falantes": 3
+  },
+  {
+   "lingua": "Mirititapuia",
+   "codigo": "3.13.8.",
+   "tronco": "3",
+   "falantes": 3
+  },
+  {
+   "lingua": "Kaimbé",
+   "codigo": "6.1.8.",
+   "tronco": "6",
+   "falantes": 3
+  },
+  {
+   "lingua": "Kanindé",
+   "codigo": "6.1.11.",
+   "tronco": "6",
+   "falantes": 3
+  },
+  {
+   "lingua": "Salamãy",
+   "codigo": "2.4.4.",
+   "tronco": "2",
+   "falantes": 1
+  },
+  {
+   "lingua": "Katawixí",
+   "codigo": "3.8.2.",
+   "tronco": "3",
+   "falantes": 1
+  },
+  {
+   "lingua": "Kambiwá-Pipipã",
+   "codigo": "6.1.10.",
+   "tronco": "6",
+   "falantes": 1
+  },
+  {
+   "lingua": "Língua de Sinais Kiriri",
+   "codigo": "7.1.1.",
+   "tronco": "7",
+   "falantes": 1
+  },
+  {
+   "lingua": "Língua de Sinais Terena",
+   "codigo": "7.1.2.",
+   "tronco": "7",
+   "falantes": 1
+  }
+ ],
+ "troncos": {
+  "1": "Macro-Jê",
+  "2": "Tupi",
+  "3": "Famílias não classificadas em troncos",
+  "4": "Línguas isoladas (não classificadas em troncos e famílias)",
+  "5": "Outras línguas crioulas (não classificadas em troncos e famílias)",
+  "6": "Línguas sem classificação atual determinada",
+  "7": "Línguas indígenas de sinais",
+  "8": "Outras línguas das Américas",
+  "9": "Não determinada",
+  "10": "Não sabe",
+  "11": "Mal definida"
+ },
+ "idiomas_no_common_voice": 294,
+ "comparacao": {
+  "abcazio_horas": 207.81,
+  "portugues_horas": 188.02,
+  "guarani_paraguaio_horas": 5.15,
+  "quichua_horas": 0.05,
+  "nauatle_horas": 0.05
+ }
+}

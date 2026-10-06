@@ -1,0 +1,310 @@
+{
+ "original": {
+  "Minas Gerais": {
+   "wer": 42.01,
+   "ic95": [
+    31.37,
+    57.7
+   ],
+   "trechos": 400,
+   "palavras": 4070
+  },
+  "Recife": {
+   "wer": 80.16,
+   "ic95": [
+    53.0,
+    117.74
+   ],
+   "trechos": 400,
+   "palavras": 2248
+  },
+  "SP capital": {
+   "wer": 37.23,
+   "ic95": [
+    32.13,
+    44.74
+   ],
+   "trechos": 400,
+   "palavras": 3304
+  },
+  "SP interior": {
+   "wer": 98.58,
+   "ic95": [
+    84.98,
+    113.54
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx": {
+   "wer": 21.98,
+   "ic95": [
+    18.04,
+    27.63
+   ],
+   "trechos": 400,
+   "palavras": 7064
+  },
+  "outros sotaques": {
+   "wer": 37.73,
+   "ic95": [
+    31.79,
+    44.26
+   ],
+   "trechos": 1600,
+   "palavras": 16686
+  }
+ },
+ "sem": {
+  "Minas Gerais": {
+   "wer": 25.68,
+   "ic95": [
+    23.42,
+    28.06
+   ],
+   "trechos": 400,
+   "palavras": 4070
+  },
+  "Recife": {
+   "wer": 31.41,
+   "ic95": [
+    28.44,
+    34.7
+   ],
+   "trechos": 400,
+   "palavras": 2248
+  },
+  "SP capital": {
+   "wer": 24.09,
+   "ic95": [
+    21.91,
+    26.13
+   ],
+   "trechos": 400,
+   "palavras": 3304
+  },
+  "SP interior": {
+   "wer": 42.39,
+   "ic95": [
+    39.29,
+    46.46
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx": {
+   "wer": 15.97,
+   "ic95": [
+    14.67,
+    17.37
+   ],
+   "trechos": 400,
+   "palavras": 7064
+  },
+  "outros sotaques": {
+   "wer": 22.02,
+   "ic95": [
+    21.02,
+    23.06
+   ],
+   "trechos": 1600,
+   "palavras": 16686
+  }
+ },
+ "meia": {
+  "Minas Gerais": {
+   "wer": 25.09,
+   "ic95": [
+    23.13,
+    27.33
+   ],
+   "trechos": 400,
+   "palavras": 4070
+  },
+  "Recife": {
+   "wer": 32.56,
+   "ic95": [
+    29.32,
+    35.99
+   ],
+   "trechos": 400,
+   "palavras": 2248
+  },
+  "SP capital": {
+   "wer": 24.0,
+   "ic95": [
+    21.86,
+    26.33
+   ],
+   "trechos": 400,
+   "palavras": 3304
+  },
+  "SP interior": {
+   "wer": 38.39,
+   "ic95": [
+    37.07,
+    39.8
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx": {
+   "wer": 15.63,
+   "ic95": [
+    14.24,
+    16.93
+   ],
+   "trechos": 400,
+   "palavras": 7064
+  },
+  "outros sotaques": {
+   "wer": 21.87,
+   "ic95": [
+    20.9,
+    22.97
+   ],
+   "trechos": 1600,
+   "palavras": 16686
+  }
+ },
+ "com": {
+  "Minas Gerais": {
+   "wer": 24.64,
+   "ic95": [
+    22.54,
+    26.87
+   ],
+   "trechos": 400,
+   "palavras": 4070
+  },
+  "Recife": {
+   "wer": 32.78,
+   "ic95": [
+    29.49,
+    36.14
+   ],
+   "trechos": 400,
+   "palavras": 2248
+  },
+  "SP capital": {
+   "wer": 23.31,
+   "ic95": [
+    21.18,
+    25.48
+   ],
+   "trechos": 400,
+   "palavras": 3304
+  },
+  "SP interior": {
+   "wer": 38.24,
+   "ic95": [
+    36.88,
+    39.77
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx": {
+   "wer": 15.39,
+   "ic95": [
+    13.96,
+    16.71
+   ],
+   "trechos": 400,
+   "palavras": 7064
+  },
+  "outros sotaques": {
+   "wer": 21.56,
+   "ic95": [
+    20.57,
+    22.64
+   ],
+   "trechos": 1600,
+   "palavras": 16686
+  }
+ },
+ "dose": [
+  {
+   "horas_interior_sp": 0,
+   "sp_interior": {
+    "wer": 42.39,
+    "ic95": [
+     39.29,
+     46.46
+    ],
+    "trechos": 1955,
+    "palavras": 14649
+   },
+   "outros_sotaques": {
+    "wer": 22.02,
+    "ic95": [
+     21.02,
+     23.06
+    ],
+    "trechos": 1600,
+    "palavras": 16686
+   }
+  },
+  {
+   "horas_interior_sp": 0.5,
+   "sp_interior": {
+    "wer": 38.39,
+    "ic95": [
+     37.07,
+     39.8
+    ],
+    "trechos": 1955,
+    "palavras": 14649
+   },
+   "outros_sotaques": {
+    "wer": 21.87,
+    "ic95": [
+     20.9,
+     22.97
+    ],
+    "trechos": 1600,
+    "palavras": 16686
+   }
+  },
+  {
+   "horas_interior_sp": 1,
+   "sp_interior": {
+    "wer": 38.24,
+    "ic95": [
+     36.88,
+     39.77
+    ],
+    "trechos": 1955,
+    "palavras": 14649
+   },
+   "outros_sotaques": {
+    "wer": 21.56,
+    "ic95": [
+     20.57,
+     22.64
+    ],
+    "trechos": 1600,
+    "palavras": 16686
+   }
+  }
+ ],
+ "conclusao": {
+  "sp_interior_sem": 42.39,
+  "sp_interior_com": 38.24,
+  "a_mais_pct": 10.9,
+  "diferenca_pp": 4.14,
+  "diferenca_ic95_pareado": [
+   1.31,
+   8.16
+  ],
+  "trechos_sem_erra_mais": 546,
+  "trechos_com_erra_mais": 416,
+  "trechos_empate": 993,
+  "sem_alucinacoes": {
+   "sem": 39.6,
+   "com": 37.97,
+   "alucinacoes_sem": 12,
+   "alucinacoes_com": 9
+  }
+ }
+}

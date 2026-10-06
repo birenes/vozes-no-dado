@@ -1,0 +1,80 @@
+{
+ "censo": {
+  "homens": 98532431,
+  "mulheres": 104548325,
+  "idade": {
+   "19 a 29": 33776654,
+   "30 a 39": 31645908,
+   "40 a 49": 29712282,
+   "50 a 59": 24167687,
+   "60 a 69": 17820621,
+   "70 ou mais": 14292869
+  }
+ },
+ "total_falantes": 3843,
+ "total_clipes": 197095,
+ "genero": [
+  {
+   "cat": "Masculino",
+   "falantes": 944,
+   "clipes": 132776
+  },
+  {
+   "cat": "Feminino",
+   "falantes": 137,
+   "clipes": 11468
+  },
+  {
+   "cat": "Não binário",
+   "falantes": 1,
+   "clipes": 10
+  },
+  {
+   "cat": "Não declarado",
+   "falantes": 3054,
+   "clipes": 52841
+  }
+ ],
+ "idade": [
+  {
+   "cat": "Menos de 19",
+   "falantes": 101,
+   "clipes": 4513
+  },
+  {
+   "cat": "19 a 29",
+   "falantes": 498,
+   "clipes": 70544
+  },
+  {
+   "cat": "30 a 39",
+   "falantes": 314,
+   "clipes": 34639
+  },
+  {
+   "cat": "40 a 49",
+   "falantes": 163,
+   "clipes": 25580
+  },
+  {
+   "cat": "50 a 59",
+   "falantes": 71,
+   "clipes": 5070
+  },
+  {
+   "cat": "60 a 69",
+   "falantes": 19,
+   "clipes": 8775
+  },
+  {
+   "cat": "70 ou mais",
+   "falantes": 2,
+   "clipes": 16
+  },
+  {
+   "cat": "Não declarado",
+   "falantes": 2995,
+   "clipes": 47958
+  }
+ ]
+}

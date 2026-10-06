@@ -1,0 +1,245 @@
+[
+ {
+  "uf": "RO",
+  "nome": "Rondônia",
+  "regiao": "Norte",
+  "populacao": 1581196,
+  "segmentos": 0,
+  "lon": -63.1788909090909,
+  "lat": -10.670392857142858
+ },
+ {
+  "uf": "AC",
+  "nome": "Acre",
+  "regiao": "Norte",
+  "populacao": 830018,
+  "segmentos": 0,
+  "lon": -70.66203707865168,
+  "lat": -9.366755056179775
+ },
+ {
+  "uf": "AM",
+  "nome": "Amazonas",
+  "regiao": "Norte",
+  "populacao": 3941613,
+  "segmentos": 0,
+  "lon": -64.45192233009709,
+  "lat": -3.2635236245954693
+ },
+ {
+  "uf": "RR",
+  "nome": "Roraima",
+  "regiao": "Norte",
+  "populacao": 636707,
+  "segmentos": 0,
+  "lon": -61.83912129032258,
+  "lat": 2.179461290322581
+ },
+ {
+  "uf": "PA",
+  "nome": "Pará",
+  "regiao": "Norte",
+  "populacao": 8120131,
+  "segmentos": 0,
+  "lon": -52.23617492063492,
+  "lat": -2.4461412698412697
+ },
+ {
+  "uf": "AP",
+  "nome": "Amapá",
+  "regiao": "Norte",
+  "populacao": 733759,
+  "segmentos": 0,
+  "lon": -52.32636534653466,
+  "lat": 1.5412356435643564
+ },
+ {
+  "uf": "TO",
+  "nome": "Tocantins",
+  "regiao": "Norte",
+  "populacao": 1511460,
+  "segmentos": 0,
+  "lon": -48.03226698564593,
+  "lat": -9.53580861244019
+ },
+ {
+  "uf": "MA",
+  "nome": "Maranhão",
+  "regiao": "Nordeste",
+  "populacao": 6776699,
+  "segmentos": 0,
+  "lon": -45.275472830188676,
+  "lat": -4.794331320754718
+ },
+ {
+  "uf": "PI",
+  "nome": "Piauí",
+  "regiao": "Nordeste",
+  "populacao": 3271199,
+  "segmentos": 0,
+  "lon": -42.82388756218905,
+  "lat": -7.046575621890547
+ },
+ {
+  "uf": "CE",
+  "nome": "Ceará",
+  "regiao": "Nordeste",
+  "populacao": 8794957,
+  "segmentos": 0,
+  "lon": -39.5456955882353,
+  "lat": -5.467060294117648
+ },
+ {
+  "uf": "RN",
+  "nome": "Rio Grande do Norte",
+  "regiao": "Nordeste",
+  "populacao": 3302729,
+  "segmentos": 0,
+  "lon": -36.809157142857146,
+  "lat": -6.0963521008403365
+ },
+ {
+  "uf": "PB",
+  "nome": "Paraíba",
+  "regiao": "Nordeste",
+  "populacao": 3974687,
+  "segmentos": 0,
+  "lon": -36.88522848837209,
+  "lat": -7.085816860465116
+ },
+ {
+  "uf": "PE",
+  "nome": "Pernambuco",
+  "regiao": "Nordeste",
+  "populacao": 9058931,
+  "segmentos": 261906,
+  "lon": -37.85964056603774,
+  "lat": -8.267809433962263
+ },
+ {
+  "uf": "AL",
+  "nome": "Alagoas",
+  "regiao": "Nordeste",
+  "populacao": 3127683,
+  "segmentos": 0,
+  "lon": -36.67366222222223,
+  "lat": -9.450974444444444
+ },
+ {
+  "uf": "SE",
+  "nome": "Sergipe",
+  "regiao": "Nordeste",
+  "populacao": 2210004,
+  "segmentos": 0,
+  "lon": -37.4436203125,
+  "lat": -10.495540625
+ },
+ {
+  "uf": "BA",
+  "nome": "Bahia",
+  "regiao": "Nordeste",
+  "populacao": 14141626,
+  "segmentos": 0,
+  "lon": -41.79076720257235,
+  "lat": -12.600440192926044
+ },
+ {
+  "uf": "MG",
+  "nome": "Minas Gerais",
+  "regiao": "Sudeste",
+  "populacao": 20539989,
+  "segmentos": 13668,
+  "lon": -45.1589061827957,
+  "lat": -18.97606827956989
+ },
+ {
+  "uf": "ES",
+  "nome": "Espírito Santo",
+  "regiao": "Sudeste",
+  "populacao": 3833712,
+  "segmentos": 0,
+  "lon": -40.98457307692308,
+  "lat": -19.641746153846153
+ },
+ {
+  "uf": "RJ",
+  "nome": "Rio de Janeiro",
+  "regiao": "Sudeste",
+  "populacao": 16055174,
+  "segmentos": 0,
+  "lon": -43.093170175438594,
+  "lat": -22.182250877192985
+ },
+ {
+  "uf": "SP",
+  "nome": "São Paulo",
+  "regiao": "Sudeste",
+  "populacao": 44411238,
+  "segmentos": 91487,
+  "lon": -48.46916705882353,
+  "lat": -22.263362352941176
+ },
+ {
+  "uf": "PR",
+  "nome": "Paraná",
+  "regiao": "Sul",
+  "populacao": 11444380,
+  "segmentos": 0,
+  "lon": -51.412293820224725,
+  "lat": -24.567864606741573
+ },
+ {
+  "uf": "SC",
+  "nome": "Santa Catarina",
+  "regiao": "Sul",
+  "populacao": 7610361,
+  "segmentos": 0,
+  "lon": -50.969235975609756,
+  "lat": -27.258837804878052
+ },
+ {
+  "uf": "RS",
+  "nome": "Rio Grande do Sul",
+  "regiao": "Sul",
+  "populacao": 10882965,
+  "segmentos": 0,
+  "lon": -52.84812863070539,
+  "lat": -29.867678008298753
+ },
+ {
+  "uf": "MS",
+  "nome": "Mato Grosso do Sul",
+  "regiao": "Centro-Oeste",
+  "populacao": 2757013,
+  "segmentos": 0,
+  "lon": -54.76165123456791,
+  "lat": -20.253235185185186
+ },
+ {
+  "uf": "MT",
+  "nome": "Mato Grosso",
+  "regiao": "Centro-Oeste",
+  "populacao": 3658649,
+  "segmentos": 0,
+  "lon": -55.709053181818184,
+  "lat": -13.39838409090909
+ },
+ {
+  "uf": "GO",
+  "nome": "Goiás",
+  "regiao": "Centro-Oeste",
+  "populacao": 7056495,
+  "segmentos": 0,
+  "lon": -49.16838260869565,
+  "lat": -15.906160869565218
+ },
+ {
+  "uf": "DF",
+  "nome": "Distrito Federal",
+  "regiao": "Centro-Oeste",
+  "populacao": 2817381,
+  "segmentos": 0,
+  "lon": -47.848704545454545,
+  "lat": -15.812636363636363
+ }
+]

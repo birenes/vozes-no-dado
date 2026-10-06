@@ -1,0 +1,45 @@
+codigo,dialeto,subdialeto
+1.1,Sulista,Sulista Padrão
+1.2,Sulista,Colono alemão
+1.3,Sulista,Colono italiano
+1.4,Sulista,Colono eslavo
+2.1,Baiano,Catingueiro
+2.2,Baiano,Litoral
+2.3,Baiano,Soteropolitano
+3.1,Nordestino,Central
+3.2,Nordestino,Ocidental
+3.3,Nordestino,Oriental
+4.1,Costa Norte,Costa Norte
+4.2,Costa Norte,Maranhense
+4.3,Costa Norte,Fortaleza
+4.4,Costa Norte,Jaguaribense
+4.5,Costa Norte,Teresina
+5.1,Caipira,Interior
+5.2,Caipira,Triângulo Mineiro
+5.3,Caipira,Médio Tietê
+5.4,Caipira,Sul
+5.5,Caipira,Vale do Paraíba
+5.6,Caipira,Caiçara
+6.1,Sertanejo,Pantanal
+6.2,Sertanejo,Campo Grande
+6.3,Sertanejo,Baixada Cuiabana
+6.4,Sertanejo,Goiás
+7.1,Nortista,Nortista
+7.2,Nortista,Metropolitano
+7.3,Nortista,Roraimês
+7.4,Nortista,Amapaês
+7.5,Nortista,Acreanês
+7.6,Nortista,Cametaês
+7.7,Nortista,Bragantinês
+8.1,Gaúcho,Gaúcho
+8.2,Gaúcho,Portoalegrense
+8.3,Gaúcho,Serra Gaúcha
+9.1,Fluminense,Fluminense
+9.2,Fluminense,Capixaba
+10,Recifense,Recifense
+11,Carioca,Carioca
+12,Paulistano,Paulistano
+13,Florianopolitano,Florianopolitano
+14,Brasiliense,Brasiliense
+15,Serra Amazônica,Serra Amazônica
+16,Mineiro,Mineiro

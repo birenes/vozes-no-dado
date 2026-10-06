@@ -1,0 +1,349 @@
+{
+ "name": "Brasil",
+ "children": [
+  {
+   "name": "Sulista",
+   "children": [
+    {
+     "name": "Sulista Padrão",
+     "codigo": "1.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Colono alemão",
+     "codigo": "1.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Colono italiano",
+     "codigo": "1.3",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Colono eslavo",
+     "codigo": "1.4",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Baiano",
+   "children": [
+    {
+     "name": "Catingueiro",
+     "codigo": "2.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Litoral",
+     "codigo": "2.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Soteropolitano",
+     "codigo": "2.3",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Nordestino",
+   "children": [
+    {
+     "name": "Central",
+     "codigo": "3.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Ocidental",
+     "codigo": "3.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Oriental",
+     "codigo": "3.3",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Costa Norte",
+   "children": [
+    {
+     "name": "Costa Norte",
+     "codigo": "4.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Maranhense",
+     "codigo": "4.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Fortaleza",
+     "codigo": "4.3",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Jaguaribense",
+     "codigo": "4.4",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Teresina",
+     "codigo": "4.5",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Caipira",
+   "children": [
+    {
+     "name": "Interior",
+     "codigo": "5.1",
+     "coraa": "ALIP (interior de São Paulo)",
+     "value": 1
+    },
+    {
+     "name": "Triângulo Mineiro",
+     "codigo": "5.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Médio Tietê",
+     "codigo": "5.3",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Sul",
+     "codigo": "5.4",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Vale do Paraíba",
+     "codigo": "5.5",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Caiçara",
+     "codigo": "5.6",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Sertanejo",
+   "children": [
+    {
+     "name": "Pantanal",
+     "codigo": "6.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Campo Grande",
+     "codigo": "6.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Baixada Cuiabana",
+     "codigo": "6.3",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Goiás",
+     "codigo": "6.4",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Nortista",
+   "children": [
+    {
+     "name": "Nortista",
+     "codigo": "7.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Metropolitano",
+     "codigo": "7.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Roraimês",
+     "codigo": "7.3",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Amapaês",
+     "codigo": "7.4",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Acreanês",
+     "codigo": "7.5",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Cametaês",
+     "codigo": "7.6",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Bragantinês",
+     "codigo": "7.7",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Gaúcho",
+   "children": [
+    {
+     "name": "Gaúcho",
+     "codigo": "8.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Portoalegrense",
+     "codigo": "8.2",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Serra Gaúcha",
+     "codigo": "8.3",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Fluminense",
+   "children": [
+    {
+     "name": "Fluminense",
+     "codigo": "9.1",
+     "coraa": null,
+     "value": 1
+    },
+    {
+     "name": "Capixaba",
+     "codigo": "9.2",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Recifense",
+   "children": [
+    {
+     "name": "Recifense",
+     "codigo": "10",
+     "coraa": "NURC-Recife (Recife)",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Carioca",
+   "children": [
+    {
+     "name": "Carioca",
+     "codigo": "11",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Paulistano",
+   "children": [
+    {
+     "name": "Paulistano",
+     "codigo": "12",
+     "coraa": "SP2010 (São Paulo, capital)",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Florianopolitano",
+   "children": [
+    {
+     "name": "Florianopolitano",
+     "codigo": "13",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Brasiliense",
+   "children": [
+    {
+     "name": "Brasiliense",
+     "codigo": "14",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Serra Amazônica",
+   "children": [
+    {
+     "name": "Serra Amazônica",
+     "codigo": "15",
+     "coraa": null,
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Mineiro",
+   "children": [
+    {
+     "name": "Mineiro",
+     "codigo": "16",
+     "coraa": "C-ORAL-BRASIL I (Belo Horizonte)",
+     "value": 1
+    }
+   ]
+  }
+ ]
+}

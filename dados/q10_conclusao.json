@@ -1,0 +1,75 @@
+{
+ "pessoas": [
+  {
+   "grupo": "Moram em estados sem dado no CORAA",
+   "pessoas": 129070598,
+   "fonte": "DTS01 + DTS04"
+  },
+  {
+   "grupo": "Mulheres",
+   "pessoas": 104548325,
+   "fonte": "DTS13"
+  },
+  {
+   "grupo": "Pessoas com 50 anos ou mais",
+   "pessoas": 56281177,
+   "fonte": "DTS13"
+  },
+  {
+   "grupo": "Pessoas diagnosticadas com autismo",
+   "pessoas": 2405337,
+   "fonte": "DTS14"
+  },
+  {
+   "grupo": "Falantes de línguas indígenas",
+   "pessoas": 474856,
+   "fonte": "DTS11"
+  }
+ ],
+ "autismo_treino": {
+  "fora": 26.38,
+  "dentro": 7.89,
+  "metrica": "CER"
+ },
+ "funcoes": [
+  {
+   "funcao": "Diagnóstico de autismo",
+   "detalhe": "transcrição das sessões (Whisper large-v3, inglês)",
+   "dentro": {
+    "grupo": "adultos",
+    "wer": 25.96
+   },
+   "fora": {
+    "grupo": "crianças",
+    "wer": 55.78
+   },
+   "fonte": "DTS16"
+  },
+  {
+   "funcao": "Assistente de voz",
+   "detalhe": "assistente comercial (Lea et al., 2021)",
+   "dentro": {
+    "grupo": "fala fluente",
+    "wer": 5.65
+   },
+   "fora": {
+    "grupo": "gagueira grave",
+    "wer": 47.86
+   },
+   "fonte": "DTS08"
+  },
+  {
+   "funcao": "Transcrição em português",
+   "detalhe": "fala do interior de SP (Candido Junior et al.)",
+   "dentro": {
+    "grupo": "com o sotaque",
+    "wer": 34.06
+   },
+   "fora": {
+    "grupo": "sem o sotaque",
+    "wer": 59.3
+   },
+   "fonte": "DTS07"
+  }
+ ]
+}

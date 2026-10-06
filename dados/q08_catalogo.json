@@ -1,0 +1,123 @@
+[
+ {
+  "corpus": "Project Euphonia",
+  "idioma": "inglês",
+  "condicao": "várias (disartria, ELA, Parkinson e outras)",
+  "falantes_total": "1330",
+  "falantes_com_condicao": "1330",
+  "horas": "1400",
+  "acesso": "fechado",
+  "fonte": "Google Research blog, 2021",
+  "conferido": "sim"
+ },
+ {
+  "corpus": "Speech Accessibility Project",
+  "idioma": "inglês",
+  "condicao": "Parkinson, ELA, paralisia cerebral, AVC, Down",
+  "falantes_total": "430",
+  "falantes_com_condicao": "430",
+  "horas": "333",
+  "acesso": "restrito",
+  "fonte": "Interspeech 2025 SAP Challenge, arXiv 2507.22047",
+  "conferido": "sim"
+ },
+ {
+  "corpus": "VA-Dysfluent",
+  "idioma": "inglês",
+  "condicao": "gagueira",
+  "falantes_total": "18",
+  "falantes_com_condicao": "18",
+  "horas": "3",
+  "acesso": "fechado",
+  "fonte": "Lea et al., arXiv 2106.11759",
+  "conferido": "sim"
+ },
+ {
+  "corpus": "SEP-28k",
+  "idioma": "inglês",
+  "condicao": "gagueira",
+  "falantes_total": "",
+  "falantes_com_condicao": "",
+  "horas": "23.5",
+  "acesso": "aberto",
+  "fonte": "Lea et al., arXiv 2102.12394",
+  "conferido": "sim: 28.177 trechos de 385 podcasts, sem contagem de pessoas"
+ },
+ {
+  "corpus": "TORGO",
+  "idioma": "inglês",
+  "condicao": "disartria",
+  "falantes_total": "15",
+  "falantes_com_condicao": "8",
+  "horas": "",
+  "acesso": "aberto",
+  "fonte": "Rudzicz et al., Universidade de Toronto",
+  "conferido": "sim: 8 com disartria e 7 de controle"
+ },
+ {
+  "corpus": "EasyCall",
+  "idioma": "italiano",
+  "condicao": "disartria (Parkinson, Huntington, ELA)",
+  "falantes_total": "47",
+  "falantes_com_condicao": "26",
+  "horas": "",
+  "acesso": "aberto",
+  "fonte": "Turrisi et al., arXiv 2104.02542",
+  "conferido": "sim: 26 com disartria e 21 de controle"
+ },
+ {
+  "corpus": "NeuroVoz",
+  "idioma": "espanhol",
+  "condicao": "Parkinson",
+  "falantes_total": "112",
+  "falantes_com_condicao": "54",
+  "horas": "",
+  "acesso": "aberto",
+  "fonte": "Mendes-Laureano et al., Scientific Data 2024",
+  "conferido": "sim: 54 com Parkinson e 58 de controle"
+ },
+ {
+  "corpus": "FraLusoPark",
+  "idioma": "português europeu",
+  "condicao": "Parkinson",
+  "falantes_total": "158",
+  "falantes_com_condicao": "84",
+  "horas": "",
+  "acesso": "restrito",
+  "fonte": "arXiv 2505.15378",
+  "conferido": "sim: 84 com Parkinson e 74 de controle"
+ },
+ {
+  "corpus": "SPIRA",
+  "idioma": "português brasileiro",
+  "condicao": "insuficiência respiratória (COVID)",
+  "falantes_total": "194",
+  "falantes_com_condicao": "95",
+  "horas": "",
+  "acesso": "restrito",
+  "fonte": "arXiv 2407.20989",
+  "conferido": "sim: 95 pacientes e 99 de controle, gravações anotadas"
+ },
+ {
+  "corpus": "Sessões de diagnóstico ADOS",
+  "idioma": "inglês",
+  "condicao": "autismo (crianças em avaliação clínica)",
+  "falantes_total": "165",
+  "falantes_com_condicao": "86",
+  "horas": "17",
+  "acesso": "fechado",
+  "fonte": "Ashvin et al., WOCCI 2025, arXiv 2409.16135",
+  "conferido": "sim: 165 sessões, 86 crianças com autismo; dados internos de duas clínicas (Michigan e Cincinnati); 17 h no total, 8 h de fala das crianças"
+ },
+ {
+  "corpus": "Fala autista em coreano",
+  "idioma": "coreano",
+  "condicao": "autismo",
+  "falantes_total": "4",
+  "falantes_com_condicao": "4",
+  "horas": "7.74",
+  "acesso": "não informado",
+  "fonte": "Park e Lee, Interspeech 2025",
+  "conferido": "sim: 4 falantes autistas lendo comandos de voz; o artigo não diz se os dados são públicos"
+ }
+]

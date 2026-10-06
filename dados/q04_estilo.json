@@ -1,0 +1,27 @@
+{
+ "Minas Gerais": {
+  "Prepared Speech": 0,
+  "Spontaneous Speech": 13668,
+  "Spontaneous and Read Speech": 0
+ },
+ "Misc.": {
+  "Prepared Speech": 35395,
+  "Spontaneous Speech": 0,
+  "Spontaneous and Read Speech": 0
+ },
+ "Recife": {
+  "Prepared Speech": 21259,
+  "Spontaneous Speech": 240647,
+  "Spontaneous and Read Speech": 0
+ },
+ "São Paulo (cap.)": {
+  "Prepared Speech": 0,
+  "Spontaneous Speech": 0,
+  "Spontaneous and Read Speech": 46482
+ },
+ "São Paulo (int.)": {
+  "Prepared Speech": 0,
+  "Spontaneous Speech": 45005,
+  "Spontaneous and Read Speech": 0
+ }
+}

@@ -1,0 +1,18 @@
+/* Todo texto da pagina e dos graficos e preto e em Arial.
+   A paleta do trabalho fica so nas marcas dos graficos (ver graficos/comum.js). */
+* { font-family: Arial, sans-serif; }
+body { margin: 0; background: #fff; color: #000; line-height: 1.5; }
+main { max-width: 1060px; margin: 0 auto; padding: 48px 24px 120px; }
+h2 { font-size: 21px; margin: 6px 0 0; max-width: 860px; }
+.etiqueta { font-size: 12px; letter-spacing: .03em; color: #000; text-transform: uppercase; }
+section { margin-top: 88px; }
+.tipo { font-size: 13px; color: #000; margin: 6px 0 0; }
+.tipo a { color: #000; }
+.grafico { margin-top: 18px; }
+#tooltip { position: fixed; pointer-events: none; background: #000; color: #fff; font-size: 13px;
+  padding: 8px 10px; border-radius: 6px; opacity: 0; transition: opacity .12s; max-width: 280px; line-height: 1.4; }
+h3 { font-size: 16px; margin: 32px 0 0; }
+.parte { font-size: 26px; font-weight: bold; margin-top: 140px; }
+.parte:first-child { margin-top: 0; }
+.parte + section { margin-top: 36px; }
+.explicacao { font-size: 15px; color: #000; margin: 10px 0 0; max-width: 860px; }

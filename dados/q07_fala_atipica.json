@@ -1,0 +1,37 @@
+{
+ "gagueira": [
+  {
+   "cat": "Fala fluente",
+   "wer": 5.65
+  },
+  {
+   "cat": "Gagueira leve",
+   "wer": 8.39
+  },
+  {
+   "cat": "Gagueira moderada",
+   "wer": 16.64
+  },
+  {
+   "cat": "Gagueira grave",
+   "wer": 47.86
+  }
+ ],
+ "euphonia": [
+  {
+   "cat": "Comprometimento leve",
+   "generico": 7.3,
+   "personalizado": 4.2
+  },
+  {
+   "cat": "Comprometimento moderado",
+   "generico": 19.6,
+   "personalizado": 11.2
+  },
+  {
+   "cat": "Comprometimento grave",
+   "generico": 31.3,
+   "personalizado": 26.7
+  }
+ ]
+}

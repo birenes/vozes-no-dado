@@ -1,0 +1,145 @@
+{
+ "modelo": "openai/whisper-large-v3 (faster-whisper, float16, beam 5)",
+ "conjunto": "CORAA ASR v1.1, teste",
+ "geral": {
+  "wer": 23.33,
+  "ic95": [
+   22.94,
+   23.73
+  ],
+  "trechos": 12676,
+  "palavras": 106487
+ },
+ "por_sotaque": {
+  "Minas Gerais": {
+   "wer": 21.67,
+   "ic95": [
+    20.89,
+    22.58
+   ],
+   "trechos": 1931,
+   "palavras": 19777
+  },
+  "Recife": {
+   "wer": 26.19,
+   "ic95": [
+    25.33,
+    27.03
+   ],
+   "trechos": 4466,
+   "palavras": 26017
+  },
+  "SP capital": {
+   "wer": 20.15,
+   "ic95": [
+    19.44,
+    20.91
+   ],
+   "trechos": 3184,
+   "palavras": 25538
+  },
+  "SP interior": {
+   "wer": 34.23,
+   "ic95": [
+    32.85,
+    35.64
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx": {
+   "wer": 17.49,
+   "ic95": [
+    16.68,
+    18.36
+   ],
+   "trechos": 1140,
+   "palavras": 20506
+  }
+ },
+ "por_estilo": {
+  "espontânea": {
+   "wer": 29.02,
+   "ic95": [
+    28.41,
+    29.7
+   ],
+   "trechos": 6970,
+   "palavras": 51777
+  },
+  "espontânea e lida": {
+   "wer": 20.15,
+   "ic95": [
+    19.39,
+    20.87
+   ],
+   "trechos": 3184,
+   "palavras": 25538
+  },
+  "preparada": {
+   "wer": 16.03,
+   "ic95": [
+    15.35,
+    16.69
+   ],
+   "trechos": 2522,
+   "palavras": 29172
+  }
+ },
+ "sotaque_x_estilo": {
+  "Minas Gerais | espontânea": {
+   "wer": 21.67,
+   "ic95": [
+    20.9,
+    22.47
+   ],
+   "trechos": 1931,
+   "palavras": 19777
+  },
+  "Recife | espontânea": {
+   "wer": 33.0,
+   "ic95": [
+    31.87,
+    34.02
+   ],
+   "trechos": 3084,
+   "palavras": 17351
+  },
+  "Recife | preparada": {
+   "wer": 12.57,
+   "ic95": [
+    11.64,
+    13.49
+   ],
+   "trechos": 1382,
+   "palavras": 8666
+  },
+  "SP capital | espontânea e lida": {
+   "wer": 20.15,
+   "ic95": [
+    19.42,
+    20.9
+   ],
+   "trechos": 3184,
+   "palavras": 25538
+  },
+  "SP interior | espontânea": {
+   "wer": 34.23,
+   "ic95": [
+    32.89,
+    35.57
+   ],
+   "trechos": 1955,
+   "palavras": 14649
+  },
+  "TEDx | preparada": {
+   "wer": 17.49,
+   "ic95": [
+    16.68,
+    18.31
+   ],
+   "trechos": 1140,
+   "palavras": 20506
+  }
+ }
+}

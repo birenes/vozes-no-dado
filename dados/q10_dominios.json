@@ -1,0 +1,17 @@
+{
+ "frases_validadas": 43622,
+ "dominios": {
+  "general": 1476,
+  "media_entertainment": 84,
+  "history_law_government": 67,
+  "language_fundamentals": 17,
+  "healthcare": 215,
+  "service_retail": 25,
+  "technology_robotics": 202,
+  "finance": 27,
+  "automotive_transport": 37,
+  "nature_environment": 57,
+  "agriculture_food": 242,
+  "news_current_affairs": 7
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "fonte": "Candido Junior et al., CORAA, arXiv 2110.15731, Tabelas 6 e 7",
+ "sotaque": [
+  {
+   "nome": "Interior de SP",
+   "sub": "ALIP",
+   "sem": 59.3,
+   "com": 34.06
+  },
+  {
+   "nome": "Minas Gerais",
+   "sub": "C-ORAL-BRASIL I",
+   "sem": 45.9,
+   "com": 28.88
+  },
+  {
+   "nome": "São Paulo, capital",
+   "sub": "SP2010",
+   "sem": 42.44,
+   "com": 20.0
+  },
+  {
+   "nome": "Recife",
+   "sub": "NURC-Recife",
+   "sem": 42.17,
+   "com": 22.03
+  },
+  {
+   "nome": "Origem não declarada",
+   "sub": "TEDx",
+   "sem": 22.69,
+   "com": 19.36
+  }
+ ],
+ "estilo": [
+  {
+   "nome": "Fala espontânea",
+   "sem": 49.18,
+   "com": 26.5
+  },
+  {
+   "nome": "Fala preparada",
+   "sem": 15.89,
+   "com": 18.7
+  }
+ ]
+}
