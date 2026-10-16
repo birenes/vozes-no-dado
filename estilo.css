@@ -16,3 +16,9 @@ h3 { font-size: 16px; margin: 32px 0 0; }
 .parte:first-child { margin-top: 0; }
 .parte + section { margin-top: 36px; }
 .explicacao { font-size: 15px; color: #000; margin: 10px 0 0; max-width: 860px; }
+.abertura { margin-bottom: 40px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 6px; max-width: 900px; }
+.autoria { font-size: 13px; color: #000; margin: 0 0 22px; }
+.intro { font-size: 16px; color: #000; margin: 12px 0 0; max-width: 860px; }
+.parte + section#fechamento { margin-top: 18px; }
+.abertura + .parte { margin-top: 64px; }
