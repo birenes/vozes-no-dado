@@ -12,8 +12,11 @@ body.apresentacao { margin: 0; }
 .slide .etiqueta { font-size: max(13px, 1.15vw); }
 .slide h2 { font-size: max(20px, 2.3vw); line-height: 1.18; margin: .5vh 0 0; max-width: none; }
 .slide h3 { font-size: max(16px, 1.6vw); line-height: 1.2; margin: 1vh 0 0; font-weight: normal; }
-.slide .grafico { flex: 1; min-height: 0; margin-top: 1.6vh; }
-.slide .grafico svg { width: 100% !important; height: 100% !important; max-width: none !important; }
+/* o svg fica preso nas quatro bordas da caixa do grafico: assim ele ocupa o espaco que sobrou no slide
+   em qualquer navegador (o Safari nem sempre resolve altura em porcentagem dentro de flex) */
+.slide .grafico { flex: 1; min-height: 0; margin-top: 1.6vh; position: relative; }
+.slide .grafico svg { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important;
+  max-width: none !important; }
 .slide .tipo { font-size: max(11px, .95vw); line-height: 1.35; margin: 1vh 0 0; }
 
 /* capa, divisoes entre as partes e fechamento: texto centralizado na vertical */

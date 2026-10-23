@@ -336,6 +336,8 @@
     });
     reespacarLegendas(svg, f);
     const b = caixaVisivel(svg), folga = 8;
+    // se a conta da caixa falhar em algum navegador, o grafico fica com o enquadramento original em vez de sumir
+    if (![b.x, b.y, b.width, b.height].every(Number.isFinite) || b.width <= 0 || b.height <= 0) return;
     svg.setAttribute("viewBox", [b.x - folga, b.y - folga, b.width + 2 * folga, b.height + 2 * folga].join(" "));
   }
 
@@ -368,8 +370,11 @@
     if (!caixas.every(c => c.querySelector("svg text"))) return;
     clearInterval(espera);
     setTimeout(() => {
-      caixas.forEach(c => ampliar(c.querySelector("svg"), AUMENTO_GRAFICO[c.id] || AUMENTO));
-      caixas.forEach(c => AJUSTE[c.id]?.(c.querySelector("svg")));
+      // um grafico que der erro no ajuste nao impede os outros
+      caixas.forEach(c => {
+        try { ampliar(c.querySelector("svg"), AUMENTO_GRAFICO[c.id] || AUMENTO); AJUSTE[c.id]?.(c.querySelector("svg")); }
+        catch (e) { console.warn("ajuste da apresentacao falhou em", c.id, e); }
+      });
       document.body.classList.add("pronto");
     }, 200);
   }, 100);
