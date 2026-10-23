@@ -10,10 +10,12 @@
 d3.json("dados/q02_estados.json").then(ESTADOS => {
   const L = 900, A = 640, MAPA = 620;   // a parte direita fica para a legenda
 
+  // na apresentacao, as cores da bandeira (amarelo, verde e azul); no site, a rampa da paleta do trabalho
+  const rampa = window.APRESENTACAO ? ["#FFDF00", "#009C3B", "#002776"] : COR.rampa;
   const faixas = [
-    { min: 0, max: 1000, cor: COR.rampa[0], rotulo: "até 1.000 por milhão de habitantes" },
-    { min: 1000, max: 10000, cor: COR.rampa[1], rotulo: "de 1.000 a 10.000" },
-    { min: 10000, max: Infinity, cor: COR.rampa[2], rotulo: "mais de 10.000" },
+    { min: 0, max: 1000, cor: rampa[0], rotulo: "até 1.000 por milhão de habitantes" },
+    { min: 1000, max: 10000, cor: rampa[1], rotulo: "de 1.000 a 10.000" },
+    { min: 10000, max: Infinity, cor: rampa[2], rotulo: "mais de 10.000" },
   ];
   const porMilhao = d => (1e6 * d.segmentos) / d.populacao;
 
@@ -42,7 +44,9 @@ d3.json("dados/q02_estados.json").then(ESTADOS => {
     .attr("stroke", d => (d.segmentos ? "none" : COR.ausenteEscuro)).attr("stroke-width", 1);
   g.append("text").attr("text-anchor", "middle").attr("dy", "0.35em").attr("font-weight", "bold")
     .attr("font-size", d => Math.max(9, Math.min(15, d.r / 2.2)))
-    .attr("fill", d => (d.segmentos ? tintaSobre(corDe(d)) : COR.tinta))
+    // o amarelo da bandeira e claro para o olho mas "medio" no HSL: aqui a sigla segue a luminosidade percebida (Lab)
+    .attr("fill", d => (!d.segmentos ? COR.tinta : window.APRESENTACAO
+      ? (d3.lab(corDe(d)).l > 60 ? COR.tinta : "#ffffff") : tintaSobre(corDe(d))))
     .attr("paint-order", "stroke").attr("stroke", d => (d.segmentos ? "none" : "#ffffff")).attr("stroke-width", 3)
     .text(d => d.uf);
 

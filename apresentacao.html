@@ -24,9 +24,9 @@
       <h3>Parte 1: Quem falta nos dados</h3>
       <ol>
         <li><a data-ir="g01">Variedades do português que o CORAA registra</a> <span>sunburst zoomável</span></li>
-        <li><a data-ir="g02p">Fala catalogada em cada estado</a> <span>barras horizontais agrupadas</span></li>
+        <li><a data-ir="g02">Fala catalogada em cada estado</a> <span>cartograma de círculos e barras agrupadas</span></li>
         <li><a data-ir="g09a">Línguas indígenas: falantes e horas no Common Voice</a> <span>barras horizontais</span></li>
-        <li><a data-ir="g06a">Gênero e idade de quem grava no Common Voice</a> <span>barras empilhadas e agrupadas</span></li>
+        <li><a data-ir="g06d">Gênero e idade de quem grava no Common Voice</a> <span>gráfico de rosca e barras agrupadas</span></li>
         <li><a data-ir="g08">Fala atípica em cada idioma</a> <span>barras horizontais agrupadas</span></li>
         <li><a data-ir="g10a">Quantos brasileiros ficam de fora dos dados</a> <span>barras horizontais</span></li>
       </ol>
@@ -34,8 +34,8 @@
     <div>
       <h3>Parte 2: O impacto nos modelos</h3>
       <ol start="7">
-        <li><a data-ir="g10e">O erro com e sem o grupo no treino</a> <span>barras horizontais agrupadas</span></li>
-        <li><a data-ir="g10d">Teste realizado com o interior de SP</a> <span>barras agrupadas</span></li>
+        <li><a data-ir="g10e">O erro com e sem o grupo no treino</a> <span>gráfico de halteres</span></li>
+        <li><a data-ir="g10l">Teste realizado com o interior de SP</a> <span>gráfico de linhas</span></li>
         <li><a data-ir="g10c">O erro em cada função dos modelos</a> <span>barras agrupadas</span></li>
       </ol>
     </div>
@@ -64,7 +64,7 @@
   <p class="tipo">Gráfico: <strong>Sunburst</strong><br>Link no D3: <a href="https://observablehq.com/@d3/sunburst/2" target="_blank">Sunburst</a></p>
 </div>
 
-<div class="slide" hidden>
+<div class="slide">
   <div class="etiqueta">QUE02: GOA01</div>
   <h2>Quanta fala catalogada existe em cada estado, comparada ao tamanho da sua população?</h2>
   <div class="grafico" id="g02"></div>
@@ -103,12 +103,21 @@
   <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE06: GOA01</div>
   <h2>A distribuição de gênero e idade dos falantes de português no Common Voice é equilibrada?</h2>
   <h3>Gênero (entre quem declarou)</h3>
   <div class="grafico" id="g06a"></div>
   <p class="tipo">Gráfico: <strong>Barras empilhadas de 100%</strong><br>Link no D3: <a href="https://observablehq.com/@d3/stacked-normalized-horizontal-bar/2" target="_blank">Stacked normalized horizontal bar chart</a></p>
+</div>
+
+<!-- so na apresentacao: genero em duas roscas (graficos/apresentacao-tipos.js) -->
+<div class="slide">
+  <div class="etiqueta">QUE06: GOA01</div>
+  <h2>A distribuição de gênero e idade dos falantes de português no Common Voice é equilibrada?</h2>
+  <h3>Gênero (entre quem declarou)</h3>
+  <div class="grafico" id="g06d"></div>
+  <p class="tipo">Gráfico: <strong>Gráfico de rosca</strong><br>Link no D3: <a href="https://observablehq.com/@d3/donut-chart/2" target="_blank">Donut chart</a></p>
 </div>
 
 <div class="slide" hidden>
@@ -207,15 +216,24 @@
   <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
   <h3>O erro do modelo com e sem o grupo nos dados de treino</h3>
   <div class="grafico" id="g10e"></div>
-  <p class="tipo">Gráfico: <strong>Barras horizontais agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a> + <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
+  <p class="tipo">Gráfico: <strong>Gráfico de halteres</strong><br>Link no D3: <a href="https://observablehq.com/@d3/dot-plot/2" target="_blank">Dot plot</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE10: GOA01, GOA02, GOA03, GOA04</div>
   <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
   <h3>Teste realizado: o mesmo modelo e as mesmas 4,9 h de treino, com 0, 0,5 e 1 h do interior de SP</h3>
   <div class="grafico" id="g10d"></div>
   <p class="tipo">Gráfico: <strong>Barras agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a></p>
+</div>
+
+<!-- so na apresentacao: o teste realizado em linhas (graficos/apresentacao-tipos.js) -->
+<div class="slide">
+  <div class="etiqueta">QUE10: GOA01, GOA02, GOA03, GOA04</div>
+  <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
+  <h3>Teste realizado: o mesmo modelo e as mesmas 4,9 h de treino, com 0, 0,5 e 1 h do interior de SP</h3>
+  <div class="grafico" id="g10l"></div>
+  <p class="tipo">Gráfico: <strong>Gráfico de linhas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/multi-line-chart/2" target="_blank">Multi-line chart</a></p>
 </div>
 
 <div class="slide">
@@ -251,6 +269,7 @@
 <script src="graficos/q10-conclusao.js"></script>
 <script src="graficos/q10-pares.js"></script>
 <script src="graficos/apresentacao-pares.js"></script>
+<script src="graficos/apresentacao-tipos.js"></script>
 <script>
   // navegacao: setas, Page Up/Page Down (o passador de slides manda essas teclas) e espaco.
   // F liga e desliga a tela cheia. O numero do slide fica no endereco (#5), entao da para
