@@ -1,7 +1,7 @@
-// QUE10, so na apresentacao (#g10e): o erro de cada grupo com e sem ele nos dados de treino, lado a lado.
-// No slide, substitui o grafico de "% a mais" (#g10b), que continua no site. Aqui nao ha conta:
+// QUE10 (#g10e): o erro de cada grupo com e sem ele nos dados de treino, lado a lado.
+// Substituiu o grafico de "% a mais", que confundia (um aumento de 234% parece impossivel). Aqui nao ha conta:
 // cada grupo tem duas barras da mesma cor, a clara e o erro do modelo que NAO viu o grupo e a escura,
-// o do modelo que viu. Azul-marinho = sotaque, carmim = fala atipica (as mesmas cores do #g10b).
+// o do modelo que viu. Azul-marinho = sotaque, carmim = fala atipica (as cores de sotaque e fala atipica do trabalho).
 // Referencias D3: https://observablehq.com/@d3/grouped-bar-chart/2
 //                 https://observablehq.com/@d3/horizontal-bar-chart/2
 // Dados: dados/q03_wer_coraa.json (DTS07), dados/q10_exclusao.json (DTS17),

@@ -3,15 +3,17 @@
 // Correcoes 3 e 4 do professor: explorar forma e cor.
 //  - FORMA: um circulo por estado, com area = populacao (mostra quantas PESSOAS ficam de fora).
 //    O modo "mapa em blocos" saiu (versao antiga em _descartados/q02-estados-com-grade.js).
-//  - COR: segmentos por milhao de habitantes em 3 faixas de azul bem separadas;
-//    estado sem nenhum segmento recebe hachura cinza (difere pela textura, nao so pela cor).
+//  - COR: segmentos por milhao de habitantes em 3 faixas, nas cores da bandeira (amarelo = pouco,
+//    verde = medio, azul = muito); estado sem nenhum segmento recebe hachura cinza (difere pela
+//    textura, nao so pela cor).
+//  - LEGENDA: uma tabela em porcentagem com a parte de cada estado na fala do CORAA e na populacao.
 // Dados: dados/q02_estados.json (DTS01, DTS04, DTS05; DAT12, DAT13, DAT14, DAT15)
 
 d3.json("dados/q02_estados.json").then(ESTADOS => {
   const L = 900, A = 640, MAPA = 620;   // a parte direita fica para a legenda
 
-  // na apresentacao, as cores da bandeira (amarelo, verde e azul); no site, a rampa da paleta do trabalho
-  const rampa = window.APRESENTACAO ? ["#FFDF00", "#009C3B", "#002776"] : COR.rampa;
+  // as cores da bandeira: amarelo, verde e azul
+  const rampa = ["#FFDF00", "#009C3B", "#002776"];
   const faixas = [
     { min: 0, max: 1000, cor: rampa[0], rotulo: "até 1.000 por milhão de habitantes" },
     { min: 1000, max: 10000, cor: rampa[1], rotulo: "de 1.000 a 10.000" },
@@ -45,8 +47,7 @@ d3.json("dados/q02_estados.json").then(ESTADOS => {
   g.append("text").attr("text-anchor", "middle").attr("dy", "0.35em").attr("font-weight", "bold")
     .attr("font-size", d => Math.max(9, Math.min(15, d.r / 2.2)))
     // o amarelo da bandeira e claro para o olho mas "medio" no HSL: aqui a sigla segue a luminosidade percebida (Lab)
-    .attr("fill", d => (!d.segmentos ? COR.tinta : window.APRESENTACAO
-      ? (d3.lab(corDe(d)).l > 60 ? COR.tinta : "#ffffff") : tintaSobre(corDe(d))))
+    .attr("fill", d => (!d.segmentos ? COR.tinta : d3.lab(corDe(d)).l > 60 ? COR.tinta : "#ffffff"))
     .attr("paint-order", "stroke").attr("stroke", d => (d.segmentos ? "none" : "#ffffff")).attr("stroke-width", 3)
     .text(d => d.uf);
 
@@ -57,10 +58,9 @@ d3.json("dados/q02_estados.json").then(ESTADOS => {
     .text(`${dec(d3.sum(sem, d => d.populacao) / 1e6, 0)} milhões`);
   leg.append("text").attr("y", 26).attr("font-size", 13).attr("fill", COR.tinta)
     .text(`de pessoas nos ${sem.length} estados sem registro`);
-  if (window.APRESENTACAO) {
-    // na apresentacao a legenda vira uma tabelinha em porcentagem: a parte de cada estado na fala do
-    // CORAA e na populacao do Brasil. As cores continuam dizendo o mesmo (azul: muito mais fala do que
-    // populacao; verde: parecido; amarelo: menos fala; listrado: nenhuma)
+  // a legenda e uma tabelinha em porcentagem: a parte de cada estado na fala do CORAA e na populacao
+  // do Brasil (azul: muito mais fala do que populacao; verde: parecido; amarelo: menos fala; listrado: nenhuma)
+  {
     const popTotal = d3.sum(ESTADOS, d => d.populacao), falaTotal = d3.sum(ESTADOS, d => d.segmentos);
     const pct = v => (v === 0 ? "0%" : dec(v, v < 10 ? 1 : 0) + "%");
     const linhas = [
@@ -68,7 +68,7 @@ d3.json("dados/q02_estados.json").then(ESTADOS => {
         .map(d => ({ cor: corDe(d), nome: d.uf, fala: 100 * d.segmentos / falaTotal, pop: 100 * d.populacao / popTotal })),
       { cor: HACHURA, nome: `outros ${sem.length}`, fala: 0, pop: 100 * d3.sum(sem, d => d.populacao) / popTotal },
     ];
-    const COL_FALA = 160, COL_POP = 290;
+    const COL_FALA = 152, COL_POP = 258;
     [[COL_FALA, "fala"], [COL_POP, "população"]].forEach(([x, t]) => leg.append("text").attr("x", x)
       .attr("y", 64).attr("text-anchor", "end").attr("font-size", 12).attr("font-weight", "bold").attr("fill", COR.tinta).text(t));
     linhas.forEach((l, i) => {
@@ -81,13 +81,5 @@ d3.json("dados/q02_estados.json").then(ESTADOS => {
     });
     leg.append("text").attr("y", 92 + linhas.length * 30 + 6).attr("font-size", 11).attr("fill", COR.tinta)
       .text("fala = trechos com estado conhecido no CORAA");
-    return;
   }
-  const itens = [[HACHURA, "nenhum segmento"], ...faixas.map(f => [f.cor, f.rotulo])];
-  itens.forEach(([c, t], i) => {
-    const y = 72 + i * 26;
-    leg.append("rect").attr("y", y - 12).attr("width", 16).attr("height", 16).attr("rx", 3)
-      .attr("fill", c).attr("stroke", i === 0 ? COR.ausenteEscuro : "none");
-    leg.append("text").attr("x", 24).attr("y", y).attr("font-size", 12.5).attr("fill", COR.tinta).text(t);
-  });
 });

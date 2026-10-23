@@ -1,10 +1,9 @@
-// So na apresentacao: duas versoes mais diretas de graficos do site, no mesmo estilo do #g10e
-// (barra clara = referencia, barra escura = o que esta nos dados, lado a lado).
-//  #g02p  no lugar do cartograma (#g02): a parte de cada estado na populacao do Brasil e nos trechos
-//         do CORAA, com a razao entre as duas
-//  #g06p  no lugar das barras divergentes de idade (#g06b): a parte de cada faixa na populacao adulta
-//         e entre quem grava no Common Voice
-// No site e na planilha continuam o cartograma e as barras divergentes.
+// Barras pareadas, no mesmo estilo do #g10e (barra clara = referencia, barra escura = o que esta nos dados).
+//  #g02p  logo depois do cartograma (#g02): a parte de cada estado na populacao do Brasil e nos trechos
+//         do CORAA, com a razao entre as duas (na apresentacao fica oculto: a legenda do cartograma ja
+//         traz essas porcentagens)
+//  #g06p  idade: a parte de cada faixa na populacao adulta e entre quem grava no Common Voice
+//         (substituiu as barras divergentes)
 // Referencias D3: https://observablehq.com/@d3/grouped-bar-chart/2
 //                 https://observablehq.com/@d3/horizontal-bar-chart/2
 // Dados: dados/q02_estados.json (DTS01, DTS04), dados/q06_genero_idade.json (DTS02, DTS13)

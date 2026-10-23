@@ -1,8 +1,7 @@
-// So na apresentacao: outros tipos de grafico, para nao ficar tudo em barras.
-//  #g10l  teste realizado em linhas (no lugar das barras agrupadas #g10d): o erro no interior de SP
+// Outros tipos de grafico, para nao ficar tudo em barras.
+//  #g10l  teste realizado em linhas (substituiu as barras agrupadas): o erro no interior de SP
 //         e nos outros sotaques conforme entram 0, 0,5 e 1 h do interior de SP no treino
-//  #g06d  genero em duas roscas (no lugar das barras empilhadas #g06a): Common Voice e populacao do Brasil
-// No site e na planilha continuam as barras.
+//  #g06d  genero em duas roscas (substituiu as barras empilhadas): Common Voice e populacao do Brasil
 // Referencias D3: https://observablehq.com/@d3/multi-line-chart/2
 //                 https://observablehq.com/@d3/donut-chart/2
 // Dados: dados/q10_exclusao.json (DTS17), dados/q06_genero_idade.json (DTS02, DTS13)

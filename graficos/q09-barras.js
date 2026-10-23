@@ -2,8 +2,8 @@
 // Referencia D3: https://observablehq.com/@d3/horizontal-bar-chart/2
 // Dois graficos de barras horizontais separados, cada um com a sua unidade:
 //  #g09a  as 12 linguas indigenas mais faladas do Brasil (IBGE, Censo 2022), barra = falantes
-//  #g09b  horas de fala validadas no Common Voice 26.0: quem esta la, inclusive linguas
-//         indigenas de outros paises das Americas, e as 295 linguas indigenas do Brasil com 0 h
+//  #g09b  horas de fala validadas no Common Voice 26.0 das linguas indigenas de outros paises das
+//         Americas e das 295 linguas indigenas do Brasil, com 0 h
 // Dados: dados/q09_linguas_indigenas.json (DTS11, DTS02; DAT28 a DAT31)
 
 d3.json("dados/q09_linguas_indigenas.json").then(D => {
@@ -11,19 +11,15 @@ d3.json("dados/q09_linguas_indigenas.json").then(D => {
   barrasQ09("#g09a", D.linguas.filter(l => +l.tronco <= 8).slice(0, 12)
     .map(l => ({ nome: l.lingua, v: l.falantes, cor: "#F76D4D" })),
     { maximo: 55000, unidade: "falantes no Brasil", formato: br });
+  // so as linguas indigenas: as das Americas que estao no Common Voice e as 295 do Brasil, com 0 h
+  // (o abcazio e o portugues sairam: numa escala de 200 h as poucas horas das indigenas nem apareciam)
   barrasQ09("#g09b", [
-    { nome: "Abcázio (Cáucaso)", v: c.abcazio_horas, cor: COR.presente },
-    { nome: "Português", v: c.portugues_horas, cor: COR.presente },
     { nome: "Guarani (Paraguai)", v: c.guarani_paraguaio_horas, cor: COR.presenteEscuro },
     { nome: "Quíchua (Andes)", v: c.quichua_horas, cor: COR.presenteEscuro },
     { nome: "Náuatle (México)", v: c.nauatle_horas, cor: COR.presenteEscuro },
     { nome: "Línguas indígenas do Brasil (295)", v: 0, cor: "#F76D4D" },
-  // na apresentacao saem o abcazio e o portugues: ficam so as linguas indigenas, numa escala em que
-  // as poucas horas que elas tem aparecem
-  ].filter(d => !(window.APRESENTACAO && (d.nome.startsWith("Abcázio") || d.nome === "Português"))),
-  { maximo: window.APRESENTACAO ? 6 : 220, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
-       legenda: [[COR.presente, "outras línguas"], [COR.presenteEscuro, "língua indígena de outro país das Américas"],
-                 ["#F76D4D", "língua indígena do Brasil"]].filter(([c]) => !(window.APRESENTACAO && c === COR.presente)) });
+  ], { maximo: 6, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
+       legenda: [[COR.presenteEscuro, "língua indígena de outro país das Américas"], ["#F76D4D", "língua indígena do Brasil"]] });
 });
 
 function barrasQ09(seletor, dados, { maximo, unidade, formato, legenda }) {

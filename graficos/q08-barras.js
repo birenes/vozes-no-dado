@@ -1,9 +1,8 @@
 // QUE08: quanto dado aberto de fala atipica existe por idioma, e em portugues brasileiro?
 // Referencia D3: https://observablehq.com/@d3/grouped-bar-chart/2 + https://observablehq.com/@d3/horizontal-bar-chart/2
-// Barras horizontais agrupadas por idioma: uma barra por corpus, com comprimento =
-// pessoas COM a condicao gravadas (sem contar o grupo de controle, para comparar
-// de forma justa). Escala linear comecando no zero, como toda barra deve ser.
-// Cor = tipo de condicao. Corpus que nao informa quantas pessoas gravou (SEP-28k) fica de fora.
+// Barras horizontais agrupadas por idioma: uma barra por corpus, com comprimento = horas de audio
+// de fala atipica (antes era o numero de pessoas). Escala linear comecando no zero, como toda barra
+// deve ser. Cor = tipo de condicao.
 // Dados: dados/q08_catalogo.json (DTS10; DAT22 a DAT27)
 
 d3.json("dados/q08_catalogo.json").then(CAT => {
@@ -24,12 +23,11 @@ d3.json("dados/q08_catalogo.json").then(CAT => {
     "Insuficiência respiratória": "#FFB449",
   };
 
-  // na apresentacao a medida e horas de audio, nao pessoas. Quando o corpus nao informa as horas, entra uma
-  // aproximacao (marcada com ~): TORGO pelos artigos que usam a base (6 a 7,3 h de fala com disartria);
+  // A medida e horas de audio. Quando o corpus nao informa as horas, entra uma aproximacao (marcada com ~): TORGO pelos artigos que usam a base (6 a 7,3 h de fala com disartria);
   // EasyCall pelas 21.386 gravacoes curtas de comandos; NeuroVoz pelas 2.903 gravacoes curtas; SPIRA pelo
   // registro no Zenodo (cerca de 1 h). FraLusoPark nao tem base para estimar e sai, junto com o portugues
   // europeu, que so tinha ele. O SEP-28k continua de fora, como no site.
-  const HORAS = window.APRESENTACAO;
+  const HORAS = true;   // false volta para o numero de pessoas
   const APROX = { "TORGO": 7, "EasyCall": 5, "NeuroVoz": 3, "SPIRA": 1 };
   const medida = c => (HORAS ? +c.horas || APROX[c.corpus] || 0 : +c.falantes_com_condicao || 0);
   const horas = v => (v >= 100 ? br(v) : dec(v, Number.isInteger(v) ? 0 : 1)) + " h";
