@@ -179,7 +179,7 @@ function testeExclusao(seletor, E) {
   const g = svg.append("g").selectAll("g").data(barras).join("g")
     .attr("transform", d => `translate(${x0(d.nome) + x1(d.rotulo)},0)`)
     .on("mousemove", (e, d) => mostrar(e, `<strong>${d.nome}</strong><br>${d.rotulo} de interior de SP no treino: ${dec(d.wer)}%` +
-      `<br>intervalo de 95%: ${dec(d.ic95[0])}% a ${dec(d.ic95[1])}%<br>${br(d.trechos)} trechos`))
+      (d.ic95 ? `<br>intervalo de 95%: ${dec(d.ic95[0])}% a ${dec(d.ic95[1])}%` : "") + `<br>${br(d.trechos)} trechos`))
     .on("mouseleave", esconder);
   g.append("rect").attr("width", x1.bandwidth()).attr("y", d => y(d.wer)).attr("height", d => y(0) - y(d.wer))
     .attr("fill", d => d.cor);
