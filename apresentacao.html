@@ -16,6 +16,37 @@
   <p class="autoria">Myllene Paiva Fernandes. Visualização de Dados, 2026/1, UERJ.</p>
 </div>
 
+<div class="slide roteiro">
+  <h2>Roteiro</h2>
+  <div class="colunas">
+    <div>
+      <div class="titulo-parte">Parte 1: Quem falta nos dados</div>
+      <ol>
+        <li><span class="que">QUE01</span> Variedades do português que o CORAA registra<span class="forma">Sunburst zoomável</span></li>
+        <li><span class="que">QUE02</span> Fala catalogada em cada estado<span class="forma">Cartograma de círculos</span></li>
+        <li><span class="que">QUE09</span> Línguas indígenas: falantes no Brasil e horas no Common Voice<span class="forma">Barras horizontais</span></li>
+        <li><span class="que">QUE06</span> Gênero e idade de quem grava no Common Voice<span class="forma">Barras empilhadas e barras divergentes</span></li>
+        <li><span class="que">QUE08</span> Bases de fala atípica em cada idioma<span class="forma">Barras horizontais agrupadas</span></li>
+      </ol>
+    </div>
+    <div>
+      <div class="titulo-parte">Parte 2: O impacto nos modelos</div>
+      <ol start="6">
+        <li><span class="que">QUE07</span> O erro dos modelos com gagueira e com fala comprometida<span class="forma">Barras horizontais e gráfico de halteres</span></li>
+      </ol>
+    </div>
+    <div>
+      <div class="titulo-parte">Conclusão</div>
+      <ol start="7">
+        <li><span class="que">QUE10</span> Quantos brasileiros ficam de fora dos dados<span class="forma">Barras horizontais</span></li>
+        <li><span class="que">QUE10</span> Quanto o modelo erra a mais quando o grupo fica fora do treino<span class="forma">Barras horizontais</span></li>
+        <li><span class="que">QUE10</span> Teste realizado com o interior de SP no treino<span class="forma">Barras agrupadas</span></li>
+        <li><span class="que">QUE10</span> O erro em cada função dos modelos<span class="forma">Barras agrupadas</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
 <div class="slide texto"><div class="parte">Parte 1: Quem falta nos dados</div></div>
 
 <div class="slide">
@@ -110,7 +141,7 @@
   <p class="tipo">Gráfico: <strong>Diagrama de Sankey</strong><br>Link no D3: <a href="https://observablehq.com/@d3/sankey/2" target="_blank">Sankey diagram</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE04: parte 2, experimento próprio</div>
   <h2>Separando sotaque e estilo, o erro do modelo muda com qual dos dois?</h2>
   <div class="grafico" id="g04b"></div>
@@ -169,7 +200,7 @@
 
 <div class="slide texto">
   <div class="parte">Considerações finais</div>
-  <p class="explicacao">Os dados mostram que boa parte do Brasil não está nas bases abertas de fala. Ficam de fora estados inteiros, mulheres, pessoas mais velhas, pessoas com fala atípica e as línguas indígenas. Quando um grupo não está no treino, o modelo erra mais com ele, e isso aparece em ferramentas usadas no dia a dia. O teste realizado traz um ponto positivo: meia hora de fala do interior de São Paulo já foi suficiente para reduzir o erro nesse sotaque. Isso indica que incluir mais variedades nos dados, mesmo em pouca quantidade, já faz diferença. E isso vale tanto para os modelos que reconhecem a fala quanto para os que a produzem: quanto mais sotaques, falas e línguas estiverem nas bases abertas, mais pessoas poderão ser entendidas pela tecnologia e se reconhecer nas vozes que ela cria.</p>
+  <p class="explicacao">Os dados mostram que boa parte do Brasil não está nas bases abertas de fala. Ficam de fora estados inteiros, mulheres, pessoas mais velhas, pessoas com fala atípica e as línguas indígenas. Quando um grupo não está no treino, o modelo erra mais com ele, e isso aparece em ferramentas usadas no dia a dia. O teste realizado traz um ponto positivo: meia hora de fala do interior de São Paulo já foi suficiente para reduzir o erro nesse sotaque. Isso indica que incluir mais variedades nos dados, mesmo em pouca quantidade, já faz diferença. E isso vale tanto para os modelos que reconhecem a fala quanto para os que a produzem: quanto mais sotaques, falas e línguas estiverem nas bases abertas, mais pessoas poderão ser entendidas pela tecnologia e se reconhecer nas vozes que ela cria. Por isso, incluir essas vozes nos dados não é só uma questão de acessibilidade. É também uma forma de preservar a fala e a cultura de cada lugar: um sotaque ou uma língua indígena que fica fora dos dados também fica fora das tecnologias que, cada vez mais, registram e reproduzem a fala.</p>
   <p class="endereco">birenes.github.io/vozes-no-dado</p>
 </div>
 
