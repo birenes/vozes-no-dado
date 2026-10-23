@@ -8,6 +8,7 @@ body.apresentacao { margin: 0; }
 
 .slide { height: 100vh; box-sizing: border-box; padding: 3.2vh 4.5vw 2.6vh;
   display: flex; flex-direction: column; scroll-snap-align: start; overflow: hidden; position: relative; }
+.slide[hidden] { display: none; }
 .slide .etiqueta { font-size: max(13px, 1.15vw); }
 .slide h2 { font-size: max(20px, 2.3vw); line-height: 1.18; margin: .5vh 0 0; max-width: none; }
 .slide h3 { font-size: max(16px, 1.6vw); line-height: 1.2; margin: 1vh 0 0; font-weight: normal; }

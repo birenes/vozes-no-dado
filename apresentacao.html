@@ -25,7 +25,7 @@
   <p class="tipo">Gráfico: <strong>Sunburst zoomável</strong><br>Link no D3: <a href="https://observablehq.com/@d3/zoomable-sunburst" target="_blank">Zoomable sunburst</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE01: versão estática</div>
   <h2>Quantas variedades do português brasileiro são descritas, e quantas o dataset distingue? (versão estática)</h2>
   <div class="grafico" id="g01b"></div>
@@ -39,7 +39,7 @@
   <p class="tipo">Gráfico: <strong>Cartograma de círculos (Dorling)</strong><br>Link no D3: <a href="https://observablehq.com/@d3/bubble-map/2" target="_blank">Bubble map</a> + <a href="https://observablehq.com/@d3/collision-detection/2" target="_blank">Collision detection</a> (adaptado: os círculos do bubble map se afastam com a colisão para não se sobrepor)</p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE05: GOA02</div>
   <h2>A qualidade do áudio, segundo os ouvintes que validaram o corpus, é a mesma entre as variedades?</h2>
   <div class="grafico" id="g05"></div>
@@ -87,7 +87,7 @@
 
 <div class="slide texto"><div class="parte">Parte 2: O impacto nos modelos</div></div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE03: GOA02</div>
   <h2>O erro dos modelos de reconhecimento de fala muda quando a variedade entra no treino?</h2>
   <h3>Por sotaque</h3>
@@ -95,7 +95,7 @@
   <p class="tipo">Gráfico: <strong>Gráfico de halteres</strong><br>Link no D3: <a href="https://observablehq.com/@d3/dot-plot/2" target="_blank">Dot plot</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE03: GOA02</div>
   <h2>O erro dos modelos de reconhecimento de fala muda quando a variedade entra no treino?</h2>
   <h3>Por estilo de fala</h3>
@@ -103,7 +103,7 @@
   <p class="tipo">Gráfico: <strong>Gráfico de halteres</strong><br>Link no D3: <a href="https://observablehq.com/@d3/dot-plot/2" target="_blank">Dot plot</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE04: GOA01, GOA02</div>
   <h2>Sotaque e estilo de fala andam juntos no dataset, a ponto de não ser possível separá-los?</h2>
   <div class="grafico" id="g04"></div>
@@ -193,7 +193,7 @@
   // navegacao: setas, Page Up/Page Down (o passador de slides manda essas teclas) e espaco.
   // F liga e desliga a tela cheia. O numero do slide fica no endereco (#5), entao da para
   // abrir direto num slide e recarregar sem voltar para o comeco.
-  const slides = [...document.querySelectorAll(".slide")];
+  const slides = [...document.querySelectorAll(".slide:not([hidden])")];
   let atual = 0;
   function ir(n) {
     atual = Math.max(0, Math.min(slides.length - 1, n));
@@ -303,13 +303,37 @@
     svg.setAttribute("viewBox", [b.x - folga, b.y - folga, b.width + 2 * folga, b.height + 2 * folga].join(" "));
   }
 
-  // os graficos carregam os dados em paralelo: espera todos aparecerem antes de ampliar
-  const caixas = [...document.querySelectorAll(".slide .grafico")];
+  // AJUSTES DE UM GRAFICO SO (tambem so neste modo)
+  const AJUSTE = {
+    // sunburst zoomavel: com a letra maior, o nome comprido passaria da borda da fatia.
+    // Cada rotulo encolhe so o necessario para caber na largura do anel (o raio do circulo do meio).
+    g01(svg) {
+      const anel = +svg.querySelector("circle").getAttribute("r");
+      svg.querySelectorAll('g[pointer-events="none"] text').forEach(t => {
+        const largura = t.getComputedTextLength(), cabe = anel - 12;
+        if (largura > cabe) t.style.fontSize = (parseFloat(t.style.fontSize) * cabe / largura) + "px";
+      });
+    },
+    // QUE06: mulheres no mesmo carmim dos outros graficos (no site continua o amarelo)
+    g06a(svg) {
+      svg.querySelectorAll("rect").forEach(r => {
+        if (r.getAttribute("fill") !== "#FFB449") return;
+        r.setAttribute("fill", COR.destaque);
+        // a porcentagem escrita dentro da barra passa a ser branca, como sobre o azul
+        if (r.parentNode === svg && r.nextElementSibling?.tagName === "text") r.nextElementSibling.setAttribute("fill", "#ffffff");
+      });
+    },
+  };
+
+  // os graficos carregam os dados em paralelo: espera todos aparecerem antes de ampliar.
+  // Os slides com hidden ficam fora da apresentacao (para voltar, e so tirar o hidden).
+  const caixas = [...document.querySelectorAll(".slide:not([hidden]) .grafico")];
   const espera = setInterval(() => {
     if (!caixas.every(c => c.querySelector("svg text"))) return;
     clearInterval(espera);
     setTimeout(() => {
       caixas.forEach(c => ampliar(c.querySelector("svg"), AUMENTO_GRAFICO[c.id] || AUMENTO));
+      caixas.forEach(c => AJUSTE[c.id]?.(c.querySelector("svg")));
       document.body.classList.add("pronto");
     }, 200);
   }, 100);
