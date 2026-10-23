@@ -18,7 +18,8 @@ d3.json("dados/q09_linguas_indigenas.json").then(D => {
     { nome: "Quíchua (Andes)", v: c.quichua_horas, cor: COR.presenteEscuro },
     { nome: "Náuatle (México)", v: c.nauatle_horas, cor: COR.presenteEscuro },
     { nome: "Línguas indígenas do Brasil (295)", v: 0, cor: "#F76D4D" },
-  ], { maximo: 220, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
+  // na apresentacao o abcazio sai: sem explicar de onde ele e, ele mais confunde do que compara
+  ].filter(d => !(window.APRESENTACAO && d.nome.startsWith("Abcázio"))), { maximo: 220, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
        legenda: [[COR.presente, "outras línguas"], [COR.presenteEscuro, "língua indígena de outro país das Américas"],
                  ["#F76D4D", "língua indígena do Brasil"]] });
 });

@@ -232,6 +232,12 @@ salvar("q10_conclusao.json", {
     # DTS15: Park & Lee, Interspeech 2025, Tabela 2: Whisper-small na fala de 4 pessoas autistas
     # (coreano, CER). Sem a fala autista no treino 26,38%; com ajuste completo nela 7,89%.
     "autismo_treino": {"fora": 26.38, "dentro": 7.89, "metrica": "CER"},
+    # So na apresentacao (fica fora da planilha, e uma aproximacao): pessoas com fala atipica somando o
+    # autismo (Censo, DTS14), a gagueira cronica (cerca de 1% da populacao, Instituto Brasileiro de
+    # Fluencia) e o Parkinson (cerca de 200 mil, estimativa do Ministerio da Saude).
+    "fala_atipica_estimativa": (lambda a, g, p: {"pessoas": a + g + p, "partes": {"autismo": a, "gagueira": g, "parkinson": p}})(
+        int(autismo[0]["resultados"][0]["series"][0]["serie"]["2022"]),
+        round(0.01 * (pop[("Homens", "Total")] + pop[("Mulheres", "Total")])), 200000),
     "funcoes": [
         # DTS16: Ashvin et al., WOCCI 2025, Tabela 3: Whisper large-v3 sem ajuste, sessoes ADOS (ingles)
         {"funcao": "Diagnóstico de autismo", "detalhe": "transcrição das sessões (Whisper large-v3, inglês)",

@@ -13,7 +13,12 @@ Promise.all([
   d3.json("dados/q10_conclusao.json"), d3.json("dados/q03_wer_coraa.json"), d3.json("dados/q07_fala_atipica.json"),
   d3.json("dados/q10_exclusao.json"),
 ]).then(([C, Q3, Q7, E]) => {
-  pessoasDeFora("#g10a", C.pessoas);
+  // na apresentacao, no lugar do autismo entra a estimativa aproximada de fala atipica
+  // (autismo + gagueira cronica + Parkinson, ver q10_conclusao.json); o site e a planilha seguem com o autismo
+  pessoasDeFora("#g10a", window.APRESENTACAO
+    ? C.pessoas.map(p => (p.grupo.includes("autismo")
+      ? { grupo: "Pessoas com fala atípica (estimativa)", pessoas: C.fala_atipica_estimativa.pessoas } : p))
+    : C.pessoas);
   custoForaDoTreino("#g10b", Q3, Q7, C.autismo_treino, E.conclusao);
   testeExclusao("#g10d", E);
   errosPorFuncao("#g10c", C.funcoes);
@@ -35,7 +40,8 @@ function pessoasDeFora(seletor, dados) {
     .call(g => g.selectAll(".tick text").attr("fill", COR.tinta))
     .call(g => g.selectAll(".tick line").clone().attr("y2", A - m.top - m.bottom).attr("stroke-opacity", 0.1))
     .call(g => g.append("text").attr("x", L - m.right).attr("y", -24).attr("text-anchor", "end")
-      .attr("fill", COR.tinta).attr("font-size", 11.5).text("pessoas no Brasil (Censo 2022)"));
+      .attr("fill", COR.tinta).attr("font-size", 11.5)
+      .text(window.APRESENTACAO ? "pessoas no Brasil (Censo 2022 e estimativas)" : "pessoas no Brasil (Censo 2022)"));
 
   svg.append("g").selectAll("rect").data(dados).join("rect")
     .attr("x", x(0)).attr("y", d => y(d.grupo))
