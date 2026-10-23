@@ -41,7 +41,7 @@
       <h3>Conclusão</h3>
       <ol start="8">
         <li><a data-ir="g10a">Quantos brasileiros ficam de fora dos dados</a> <span>barras horizontais</span></li>
-        <li><a data-ir="g10b">Quanto o modelo erra a mais fora do treino</a> <span>barras horizontais</span></li>
+        <li><a data-ir="g10e">O erro com e sem o grupo no treino</a> <span>barras horizontais agrupadas</span></li>
         <li><a data-ir="g10d">Teste realizado com o interior de SP</a> <span>barras agrupadas</span></li>
         <li><a data-ir="g10c">O erro em cada função dos modelos</a> <span>barras agrupadas</span></li>
       </ol>
@@ -176,12 +176,21 @@
   <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
 </div>
 
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE10: GOA01, GOA02, GOA03, GOA04</div>
   <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
   <h3>Quanto o modelo erra a mais quando o grupo fica fora do treino</h3>
   <div class="grafico" id="g10b"></div>
   <p class="tipo">Gráfico: <strong>Barras horizontais</strong><br>Link no D3: <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
+</div>
+
+<!-- so na apresentacao: no lugar do "% a mais", o erro com e sem o grupo no treino, lado a lado (graficos/q10-pares.js) -->
+<div class="slide">
+  <div class="etiqueta">QUE10: GOA01, GOA02, GOA03, GOA04</div>
+  <h2>Quem fica de fora dos dados, quanto isso custa ao modelo e o que muda na prática?</h2>
+  <h3>O erro do modelo com e sem o grupo nos dados de treino</h3>
+  <div class="grafico" id="g10e"></div>
+  <p class="tipo">Gráfico: <strong>Barras horizontais agrupadas</strong><br>Link no D3: <a href="https://observablehq.com/@d3/grouped-bar-chart/2" target="_blank">Grouped bar chart</a> + <a href="https://observablehq.com/@d3/horizontal-bar-chart/2" target="_blank">Horizontal bar chart</a></p>
 </div>
 
 <div class="slide">
@@ -222,6 +231,7 @@
 <script src="graficos/q08-barras.js"></script>
 <script src="graficos/q09-barras.js"></script>
 <script src="graficos/q10-conclusao.js"></script>
+<script src="graficos/q10-pares.js"></script>
 <script>
   // navegacao: setas, Page Up/Page Down (o passador de slides manda essas teclas) e espaco.
   // F liga e desliga a tela cheia. O numero do slide fica no endereco (#5), entao da para

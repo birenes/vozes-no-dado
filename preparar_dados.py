@@ -219,7 +219,7 @@ with open(os.path.join(D, "q03_wer_coraa.json"), encoding="utf-8") as f:
 
 salvar("q10_conclusao.json", {
     "pessoas": [
-        {"grupo": "Moram em estados sem dado no CORAA",
+        {"grupo": "Moram em estados não representados no CORAA",
          "pessoas": sum(e["populacao"] for e in estados if e["segmentos"] == 0), "fonte": "DTS01 + DTS04"},
         {"grupo": "Mulheres", "pessoas": pop[("Mulheres", "Total")], "fonte": "DTS13"},
         {"grupo": "Pessoas com 50 anos ou mais",

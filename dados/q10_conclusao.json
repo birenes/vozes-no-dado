@@ -1,7 +1,7 @@
 {
  "pessoas": [
   {
-   "grupo": "Moram em estados sem dado no CORAA",
+   "grupo": "Moram em estados não representados no CORAA",
    "pessoas": 129070598,
    "fonte": "DTS01 + DTS04"
   },

@@ -22,7 +22,7 @@ Promise.all([
 // ---- #g10a: os grupos se sobrepoem (uma mulher de 60 anos em Goias entra em tres barras),
 // por isso o grafico mostra cada lacuna sozinha e nunca soma
 function pessoasDeFora(seletor, dados) {
-  const m = { top: 40, right: 110, bottom: 10, left: 270 }, PASSO = 40;
+  const m = { top: 40, right: 110, bottom: 10, left: 320 }, PASSO = 40;
   const L = 900, A = m.top + dados.length * PASSO + m.bottom;
   const x = d3.scaleLinear().domain([0, 140e6]).range([m.left, L - m.right]);
   const y = d3.scaleBand().domain(dados.map(d => d.grupo)).rangeRound([m.top, A - m.bottom]).padding(0.25);
