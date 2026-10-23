@@ -1,0 +1,29 @@
+/* Modo apresentacao: um grafico por slide, ocupando a tela inteira.
+   Os graficos sao os mesmos da pagina principal (mesmos arquivos em graficos/).
+   Como cada svg tem viewBox, ele cresce ate encher o slide e o texto e as legendas
+   de dentro crescem junto. Os tamanhos de letra fora do svg seguem a largura da tela (vw),
+   entao o slide fica igual em 1280x720, 1920x1080 ou no projetor. */
+html { scroll-snap-type: y mandatory; }
+body.apresentacao { margin: 0; }
+
+.slide { height: 100vh; box-sizing: border-box; padding: 3.2vh 4.5vw 2.6vh;
+  display: flex; flex-direction: column; scroll-snap-align: start; overflow: hidden; position: relative; }
+.slide .etiqueta { font-size: max(13px, 1.15vw); }
+.slide h2 { font-size: max(20px, 2.3vw); line-height: 1.18; margin: .5vh 0 0; max-width: none; }
+.slide h3 { font-size: max(16px, 1.6vw); line-height: 1.2; margin: 1vh 0 0; font-weight: normal; }
+.slide .grafico { flex: 1; min-height: 0; margin-top: 1.6vh; }
+.slide .grafico svg { width: 100% !important; height: 100% !important; max-width: none !important; }
+.slide .tipo { font-size: max(11px, .95vw); line-height: 1.35; margin: 1vh 0 0; }
+
+/* capa, divisoes entre as partes e fechamento: texto centralizado na vertical */
+.slide.texto { justify-content: center; }
+.slide.texto h1 { font-size: max(30px, 3.6vw); max-width: 80vw; }
+.slide.texto .autoria { font-size: max(15px, 1.4vw); margin-top: 2vh; }
+.slide.texto .parte { font-size: max(30px, 3.6vw); margin: 0; }
+.slide.texto .explicacao { font-size: max(17px, 1.75vw); line-height: 1.45; max-width: 80vw; margin-top: 3vh; }
+.slide.texto .endereco { font-size: max(15px, 1.4vw); margin-top: 4vh; }
+
+/* numero do slide no canto */
+#contador { position: fixed; right: 1.6vw; bottom: 1.4vh; font-size: max(11px, .85vw); color: #000; }
+
+#tooltip { font-size: max(15px, 1.1vw); max-width: 32vw; }
