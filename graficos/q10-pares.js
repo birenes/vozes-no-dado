@@ -4,28 +4,23 @@
 // o do modelo que viu. Azul-marinho = sotaque, carmim = fala atipica (as cores de sotaque e fala atipica do trabalho).
 // Referencias D3: https://observablehq.com/@d3/grouped-bar-chart/2
 //                 https://observablehq.com/@d3/horizontal-bar-chart/2
-// Dados: dados/q03_wer_coraa.json (DTS07), dados/q07_fala_atipica.json (DTS09),
-//        dados/q10_conclusao.json (autismo_treino, DTS15)
+// Dados: dados/q03_wer_coraa.json (DTS07), dados/q07_fala_atipica.json (DTS09)
 
-Promise.all([
-  d3.json("dados/q10_conclusao.json"), d3.json("dados/q03_wer_coraa.json"), d3.json("dados/q07_fala_atipica.json"),
-]).then(([C, Q3, Q7]) => errosComESemTreino("#g10e", C, Q3, Q7));
+Promise.all([d3.json("dados/q03_wer_coraa.json"), d3.json("dados/q07_fala_atipica.json")])
+  .then(([Q3, Q7]) => errosComESemTreino("#g10e", Q3, Q7));
 
-function errosComESemTreino(seletor, C, Q3, Q7) {
+function errosComESemTreino(seletor, Q3, Q7) {
   // o interior de SP fica de fora deste grafico (o do artigo e o do teste realizado): ele ja aparece
   // sozinho no grafico de linhas do teste e no ultimo grafico, das funcoes
   const sotaques = Q3.sotaque.filter(d => d.nome !== "Interior de SP").map(d => ({
     nome: d.nome === "Origem não declarada" ? "Origem não declarada (TEDx)" : d.nome, fora: d.sem, dentro: d.com,
     fonte: "Wav2Vec 2.0 XLSR-53 ajustado sem e com o CORAA (Candido Junior et al.)" }));
-  const atipica = [
-    ...Q7.euphonia.map(d => ({ nome: d.cat, fora: d.generico, dentro: d.personalizado,
-      fonte: "modelo genérico e personalizado (Project Euphonia)" })),
-    { nome: "Pessoas autistas (coreano)", sub: "erro por caractere", fora: C.autismo_treino.fora,
-      dentro: C.autismo_treino.dentro, fonte: "Whisper-small sem e com a fala autista no treino (Park e Lee, 2025; 4 falantes)" },
-  ];
+  // a fala autista em coreano (4 falantes) e a linha das linguas indigenas sem dado tambem sairam
+  const atipica = Q7.euphonia.map(d => ({ nome: d.cat, fora: d.generico, dentro: d.personalizado,
+    fonte: "modelo genérico (USM) e personalizado (Project Euphonia)" }));
   const blocos = [
     { titulo: "SOTAQUES (artigo do CORAA)", cor: COR.presente, linhas: sotaques },
-    { titulo: "FALA ATÍPICA (Project Euphonia e Park e Lee, 2025)", cor: COR.destaque, linhas: atipica },
+    { titulo: "FALA ATÍPICA (Project Euphonia)", cor: COR.destaque, linhas: atipica },
   ];
 
   const L = 900, m = { top: 50, right: 150, left: 250 }, PASSO = 40, CAB = 32, BARRA = 14;
@@ -36,12 +31,10 @@ function errosComESemTreino(seletor, C, Q3, Q7) {
     yAtual += CAB;
     b.linhas.forEach((l, i) => { itens.push({ tipo: "grupo", ...l, cor: b.cor, primeiro: i === 0, y: yAtual }); yAtual += PASSO; });
   });
-  itens.push({ tipo: "semdado", nome: "Línguas indígenas do Brasil", y: yAtual + 4 });
-  const A = yAtual + PASSO + 14;
+  const A = yAtual + 10;
 
   const x = d3.scaleLinear().domain([0, 60]).range([m.left, L - m.right]);
   const svg = novoSvg(seletor, L, A);
-  const listras = definirHachura(svg, "hachura-g10e");
   const pct = v => dec(v, v < 10 ? 1 : 0) + "%";
 
   svg.append("g").attr("transform", `translate(0,${m.top - 6})`)
@@ -73,11 +66,4 @@ function errosComESemTreino(seletor, C, Q3, Q7) {
       .text(d => pct(d[chave]) + (d.primeiro ? rotulo : ""));
   });
 
-  const sem = itens.find(d => d.tipo === "semdado");
-  svg.append("text").attr("x", m.left - 12).attr("y", sem.y + BARRA + 2).attr("dy", "0.35em").attr("text-anchor", "end")
-    .attr("font-size", 13).attr("fill", COR.tinta).text(sem.nome);
-  svg.append("rect").attr("x", x(0)).attr("y", sem.y + 4).attr("width", x(60) - x(0)).attr("height", 2 * BARRA + 3)
-    .attr("fill", listras);
-  svg.append("text").attr("x", x(0) + 10).attr("y", sem.y + BARRA + 2).attr("dy", "0.35em")
-    .attr("font-size", 12.5).attr("font-weight", "bold").attr("fill", COR.tinta).text("sem nenhum dado: não dá nem para medir");
 }
