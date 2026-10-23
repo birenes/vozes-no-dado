@@ -18,10 +18,12 @@ d3.json("dados/q09_linguas_indigenas.json").then(D => {
     { nome: "Quíchua (Andes)", v: c.quichua_horas, cor: COR.presenteEscuro },
     { nome: "Náuatle (México)", v: c.nauatle_horas, cor: COR.presenteEscuro },
     { nome: "Línguas indígenas do Brasil (295)", v: 0, cor: "#F76D4D" },
-  // na apresentacao o abcazio sai: sem explicar de onde ele e, ele mais confunde do que compara
-  ].filter(d => !(window.APRESENTACAO && d.nome.startsWith("Abcázio"))), { maximo: 220, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
+  // na apresentacao saem o abcazio e o portugues: ficam so as linguas indigenas, numa escala em que
+  // as poucas horas que elas tem aparecem
+  ].filter(d => !(window.APRESENTACAO && (d.nome.startsWith("Abcázio") || d.nome === "Português"))),
+  { maximo: window.APRESENTACAO ? 6 : 220, unidade: "horas de fala validadas", formato: h => `${Number.isInteger(h) ? h : dec(h, h < 1 ? 2 : 1)} h`,
        legenda: [[COR.presente, "outras línguas"], [COR.presenteEscuro, "língua indígena de outro país das Américas"],
-                 ["#F76D4D", "língua indígena do Brasil"]] });
+                 ["#F76D4D", "língua indígena do Brasil"]].filter(([c]) => !(window.APRESENTACAO && c === COR.presente)) });
 });
 
 function barrasQ09(seletor, dados, { maximo, unidade, formato, legenda }) {

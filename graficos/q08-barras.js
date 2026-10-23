@@ -24,19 +24,29 @@ d3.json("dados/q08_catalogo.json").then(CAT => {
     "Insuficiência respiratória": "#FFB449",
   };
 
+  // na apresentacao a medida e horas de audio, nao pessoas. Quando o corpus nao informa as horas, entra uma
+  // aproximacao (marcada com ~): TORGO pelos artigos que usam a base (6 a 7,3 h de fala com disartria);
+  // EasyCall pelas 21.386 gravacoes curtas de comandos; NeuroVoz pelas 2.903 gravacoes curtas; SPIRA pelo
+  // registro no Zenodo (cerca de 1 h). FraLusoPark nao tem base para estimar e aparece como "nao informado".
+  // O SEP-28k continua de fora, como no site.
+  const HORAS = window.APRESENTACAO;
+  const APROX = { "TORGO": 7, "EasyCall": 5, "NeuroVoz": 3, "SPIRA": 1 };
+  const medida = c => (HORAS ? +c.horas || APROX[c.corpus] || 0 : +c.falantes_com_condicao || 0);
+  const horas = v => (v >= 100 ? br(v) : dec(v, Number.isInteger(v) ? 0 : 1)) + " h";
   const linhas = [];
   ORDEM.forEach(idioma => {
     linhas.push({ cabecalho: idioma });
-    CAT.filter(c => c.idioma === idioma)
-      .map(c => ({ ...c, n: +c.falantes_com_condicao || 0, tipo: TIPO(c) }))
-      .filter(c => c.n > 0)
+    CAT.filter(c => c.idioma === idioma && !(HORAS && c.corpus === "SEP-28k"))
+      .map(c => ({ ...c, n: medida(c), aprox: HORAS && !+c.horas && c.corpus in APROX, tipo: TIPO(c) }))
+      .filter(c => c.n > 0 || HORAS)
       .sort((a, b) => b.n - a.n)
       .forEach(c => linhas.push(c));
   });
 
   const PASSO = 28, m = { top: 46, left: 230, right: 250 };
   const L = 960, A = m.top + linhas.length * PASSO + 20;
-  const x = d3.scaleLinear().domain([0, 1400]).range([m.left, L - m.right]);
+  // em horas, o Project Euphonia chega a 1.400: a escala vai um pouco alem para o rotulo nao encostar na legenda
+  const x = d3.scaleLinear().domain([0, HORAS ? 1600 : 1400]).range([m.left, L - m.right]);
   const svg = novoSvg("#g08", L, A);
 
   svg.append("g").selectAll("line").data(x.ticks(7)).join("line")
@@ -45,7 +55,8 @@ d3.json("dados/q08_catalogo.json").then(CAT => {
     .attr("x", d => x(d)).attr("y", m.top - 14).attr("text-anchor", "middle").attr("font-size", 11).attr("fill", COR.tinta)
     .text(d => br(d));
   svg.append("text").attr("x", m.left).attr("y", 14).attr("font-size", 11.5).attr("fill", COR.tinta)
-    .text("pessoas com fala atípica gravadas (sem contar o grupo de controle)");
+    .text(HORAS ? "horas de fala atípica gravadas (~ = aproximado)"
+      : "pessoas com fala atípica gravadas (sem contar o grupo de controle)");
 
   linhas.forEach((d, i) => {
     const y = m.top + i * PASSO + PASSO / 2;
@@ -65,7 +76,8 @@ d3.json("dados/q08_catalogo.json").then(CAT => {
     g.append("rect").attr("x", x(0)).attr("y", y - 8).attr("width", x(d.n) - x(0)).attr("height", 16).attr("rx", 2)
       .attr("fill", COR_TIPO[d.tipo]);
     g.append("text").attr("x", x(d.n) + 6).attr("y", y).attr("dy", "0.35em").attr("font-size", 11.5)
-      .attr("font-weight", "bold").attr("fill", COR.tinta).text(br(d.n));
+      .attr("font-weight", "bold").attr("fill", COR.tinta)
+      .text(!HORAS ? br(d.n) : d.n ? (d.aprox ? "~" : "") + horas(d.n) : "horas não informadas");
   });
 
   // legenda e conclusao
