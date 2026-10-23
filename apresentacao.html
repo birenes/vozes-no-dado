@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apresentação: Quem fica de fora dos dados de fala do português brasileiro</title>
-<link rel="stylesheet" href="estilo.css">
-<link rel="stylesheet" href="apresentacao.css">
-<script src="lib/d3.min.js"></script>
-<script src="lib/d3-sankey.min.js"></script>
+<link rel="stylesheet" href="estilo.css?v=20261023i">
+<link rel="stylesheet" href="apresentacao.css?v=20261023i">
+<script src="lib/d3.min.js?v=20261023i"></script>
+<script src="lib/d3-sankey.min.js?v=20261023i"></script>
 </head>
 <body class="apresentacao">
 
@@ -24,7 +24,7 @@
       <h3>Parte 1: Quem falta nos dados</h3>
       <ol>
         <li><a data-ir="g01">Variedades do português que o CORAA registra</a> <span>sunburst zoomável</span></li>
-        <li><a data-ir="g02">Fala catalogada em cada estado</a> <span>cartograma de círculos e barras agrupadas</span></li>
+        <li><a data-ir="g02">Fala catalogada em cada estado</a> <span>cartograma de círculos</span></li>
         <li><a data-ir="g09a">Línguas indígenas: falantes e horas no Common Voice</a> <span>barras horizontais</span></li>
         <li><a data-ir="g06d">Gênero e idade de quem grava no Common Voice</a> <span>gráfico de rosca e barras agrupadas</span></li>
         <li><a data-ir="g08">Fala atípica em cada idioma</a> <span>barras horizontais agrupadas</span></li>
@@ -72,7 +72,7 @@
 </div>
 
 <!-- so na apresentacao: no lugar do cartograma, a parte de cada estado na populacao e na fala (graficos/apresentacao-pares.js) -->
-<div class="slide">
+<div class="slide" hidden>
   <div class="etiqueta">QUE02: GOA01</div>
   <h2>Quanta fala catalogada existe em cada estado, comparada ao tamanho da sua população?</h2>
   <h3>A parte de cada estado na população do Brasil e nos trechos do CORAA</h3>
@@ -254,22 +254,22 @@
 <div id="tooltip"></div>
 
 <script>window.APRESENTACAO = true; // os graficos leem isto para as versoes so da apresentacao</script>
-<script src="graficos/comum.js"></script>
-<script src="graficos/q01-sunburst.js"></script>
-<script src="graficos/q01b-sunburst-estatico.js"></script>
-<script src="graficos/q02-estados.js"></script>
-<script src="graficos/q03-halteres.js"></script>
-<script src="graficos/q04-sankey.js"></script>
-<script src="graficos/q04b-whisper.js"></script>
-<script src="graficos/q05-barras-agrupadas.js"></script>
-<script src="graficos/q06-divergente.js"></script>
-<script src="graficos/q07-fala-atipica.js"></script>
-<script src="graficos/q08-barras.js"></script>
-<script src="graficos/q09-barras.js"></script>
-<script src="graficos/q10-conclusao.js"></script>
-<script src="graficos/q10-pares.js"></script>
-<script src="graficos/apresentacao-pares.js"></script>
-<script src="graficos/apresentacao-tipos.js"></script>
+<script src="graficos/comum.js?v=20261023i"></script>
+<script src="graficos/q01-sunburst.js?v=20261023i"></script>
+<script src="graficos/q01b-sunburst-estatico.js?v=20261023i"></script>
+<script src="graficos/q02-estados.js?v=20261023i"></script>
+<script src="graficos/q03-halteres.js?v=20261023i"></script>
+<script src="graficos/q04-sankey.js?v=20261023i"></script>
+<script src="graficos/q04b-whisper.js?v=20261023i"></script>
+<script src="graficos/q05-barras-agrupadas.js?v=20261023i"></script>
+<script src="graficos/q06-divergente.js?v=20261023i"></script>
+<script src="graficos/q07-fala-atipica.js?v=20261023i"></script>
+<script src="graficos/q08-barras.js?v=20261023i"></script>
+<script src="graficos/q09-barras.js?v=20261023i"></script>
+<script src="graficos/q10-conclusao.js?v=20261023i"></script>
+<script src="graficos/q10-pares.js?v=20261023i"></script>
+<script src="graficos/apresentacao-pares.js?v=20261023i"></script>
+<script src="graficos/apresentacao-tipos.js?v=20261023i"></script>
 <script>
   // navegacao: setas, Page Up/Page Down (o passador de slides manda essas teclas) e espaco.
   // F liga e desliga a tela cheia. O numero do slide fica no endereco (#5), entao da para
