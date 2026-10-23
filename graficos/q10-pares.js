@@ -4,21 +4,19 @@
 // o do modelo que viu. Azul-marinho = sotaque, carmim = fala atipica (as cores de sotaque e fala atipica do trabalho).
 // Referencias D3: https://observablehq.com/@d3/grouped-bar-chart/2
 //                 https://observablehq.com/@d3/horizontal-bar-chart/2
-// Dados: dados/q03_wer_coraa.json (DTS07), dados/q10_exclusao.json (DTS17),
-//        dados/q07_fala_atipica.json (DTS09), dados/q10_conclusao.json (autismo_treino, DTS15)
+// Dados: dados/q03_wer_coraa.json (DTS07), dados/q07_fala_atipica.json (DTS09),
+//        dados/q10_conclusao.json (autismo_treino, DTS15)
 
 Promise.all([
   d3.json("dados/q10_conclusao.json"), d3.json("dados/q03_wer_coraa.json"), d3.json("dados/q07_fala_atipica.json"),
-  d3.json("dados/q10_exclusao.json"),
-]).then(([C, Q3, Q7, E]) => errosComESemTreino("#g10e", C, Q3, Q7, E));
+]).then(([C, Q3, Q7]) => errosComESemTreino("#g10e", C, Q3, Q7));
 
-function errosComESemTreino(seletor, C, Q3, Q7, E) {
-  const sotaques = Q3.sotaque.map(d => ({
+function errosComESemTreino(seletor, C, Q3, Q7) {
+  // o interior de SP fica de fora deste grafico (o do artigo e o do teste realizado): ele ja aparece
+  // sozinho no grafico de linhas do teste e no ultimo grafico, das funcoes
+  const sotaques = Q3.sotaque.filter(d => d.nome !== "Interior de SP").map(d => ({
     nome: d.nome === "Origem não declarada" ? "Origem não declarada (TEDx)" : d.nome, fora: d.sem, dentro: d.com,
-    fonte: "modelo treinado sem e com o CORAA (Candido Junior et al.)" }));
-  // o teste realizado entra logo abaixo do interior de SP do artigo, para comparar os dois
-  sotaques.splice(1, 0, { nome: "Interior de SP (teste realizado)", fora: E.conclusao.sp_interior_sem,
-    dentro: E.conclusao.sp_interior_com, fonte: "Whisper-small com 0 h e com 1 h do interior de SP no treino" });
+    fonte: "Wav2Vec 2.0 XLSR-53 ajustado sem e com o CORAA (Candido Junior et al.)" }));
   const atipica = [
     ...Q7.euphonia.map(d => ({ nome: d.cat, fora: d.generico, dentro: d.personalizado,
       fonte: "modelo genérico e personalizado (Project Euphonia)" })),
@@ -26,7 +24,7 @@ function errosComESemTreino(seletor, C, Q3, Q7, E) {
       dentro: C.autismo_treino.dentro, fonte: "Whisper-small sem e com a fala autista no treino (Park e Lee, 2025; 4 falantes)" },
   ];
   const blocos = [
-    { titulo: "SOTAQUES (artigo do CORAA e teste realizado)", cor: COR.presente, linhas: sotaques },
+    { titulo: "SOTAQUES (artigo do CORAA)", cor: COR.presente, linhas: sotaques },
     { titulo: "FALA ATÍPICA (Project Euphonia e Park e Lee, 2025)", cor: COR.destaque, linhas: atipica },
   ];
 
